@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+<body bgcolor="lightblue">
+
+<center><h1  >Hello World</h1>
+        <h2 align="center" >Hello World</h2>
+        <h3 align="center" >Hello World</h3>
+        <h4 align="center" >Hello World</h4>
+        <h5 align="center" >Hello World</h5>
+        <h6 align="center" >Hello World</h6>
+        <h7 align="center" >Hello World</h7>
+        <!-- there is no h7 tag  -->
+    </center>
+    <marquee>This is marquee</marquee>
+    <marquee width="400" direction="right" >This is marquee left to right</marquee>
+    <marquee direction="up">marquee direction up</marquee>
+    <marquee direction="down">this is marquee direction down</marquee>
+    <center>
+        <marquee>
+        <video width="200">
+        <source src="video.mp4" type="video/mp4">
+
+    </video></marquee></center>
+    <audio controls>
+        <source src="video.mp3" type="audio/mp3">
+    </audio>
+    <video width="200" controls controls loop autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+
+    </video>
+    <p id="p"><i><strong>This is a <br><hr>paragraph</strong></i></p>
+    <b>this  is bold tag</b><br>
+    <u>this is an underline tag</u><br>
+    <del>this is a del tag</del>
+    <button>This is a button</button>
+    <h6>you are clicking the button</h6>
+    <img src="D:\Web development\Web design challenge\images\image.jpg">
+    <a href="google.com">google</a>
+    <a href="test.html">click here</a> This is an external link and href means hyper text reference<br>
+    <a href="#p">This is an internal link</a> minimize the screen to test it<br>
+    <b style="background-color:red; color:green">Different type of lists</b>
+    <ol> OL
+        <li>This</li>
+        <li>is</li>
+        <li>Ordered List</li>
+        <ul>
+            <li>This is</li>
+            <li>Unordered</li>
+        </ul>
+    </ol>
+    <ol type="a">
+        <li>It</li>
+        <li>is</li>
+        <li>type='a'</li>
+    </ol>
+    <ol type="i">
+        <li>It</li>
+        <li>is</li>
+        <li>type='i'</li>
+    </ol>
+    <dl>
+        DL- Discription lists
+        <dt>DT</dt>
+        <dd>-DisctriptionTerm</dd>
+        <Dt>DD</Dt>
+        <dd>-Disctription</dd>
+    </dl>
+    <b style="color:Red">TABLE</b><BR>
+        <table align="center" style="background-color:yellow" border="5">
+            <thead >
+                <tr>
+                    <th>si</th>
+                    <th>Name</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>Abcd</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Acde</td>
+                    <td>25</td>
+                    <th>th</th>
+                </tr>
+            </tbody>
+        </table>
+        <pre>This is written inside      a
+            
+            pre   tag
+        </pre>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script>
+        $(document).ready(function(){
+            $("h6").hide()
+            $("button").click(function(){
+                $("h6").show()
+                $("h6").html("this is html")
+            })
+        })
+    </script>
+
+   
+</body>
+</html>

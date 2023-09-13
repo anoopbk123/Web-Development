@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body bgcolor="lightblue">
+    <center>
+    <div style="background-color:rgb(38, 0, 128); margin-left:300px; margin-right:300px;margin-top:150px">
+        <h1 style="color:Red; background-color:yellow">Simple Calculator</h1>
+        <table style="color:red">
+            <tr>
+                <th><h2>Number 1</h2></th>
+                <td><input type="number" id="num1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button id="add">+</button></td> <td><button id="minus">-</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button id="multiply">x</button></td> <td><button id="div">/</button></td>
+            </tr>
+            <tr>
+                <th><h2>Number 2</h2></th>
+                <td><input type="number" id="num2"></td>
+            </tr>
+            <tr>
+                <th><h2>Output</h2></th>
+                <td><input type="number" readonly id="out"></td>
+            </tr>
+
+        </table>
+    </div>
+    </center>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                if($("#num1").val()==''||$("#num2").val()==''){
+                    alert("Enter two inputs")
+
+                }
+                else{
+                    let num1=$("#num1").val()
+                    let num2=$("#num2").val()
+                    let sum=Number(num1)+Number(num2)
+                    $("#out").val(sum)
+                }
+            })
+            $("#minus").click(function(){
+                if($("#num1").val()==''||$("#num2").val()==''){
+                    alert("Enter two inputs")
+
+                }
+                else{
+                    let num1=$("#num1").val()
+                    let num2=$("#num2").val()
+                    let sum=Number(num1)-Number(num2)
+                    $("#out").val(sum)
+                }
+            })
+            $("#multiply").click(function(){
+                if($("#num1").val()==''||$("#num2").val()==''){
+                    alert("Enter two inputs")
+
+                }
+                else{
+                    let num1=$("#num1").val()
+                    let num2=$("#num2").val()
+                    let sum=Number(num1)*Number(num2)
+                    $("#out").val(sum)
+                }
+            })
+            $("#div").click(function(){
+                if($("#num1").val()==''||$("#num2").val()==''){
+                    alert("Enter two inputs")
+
+                }
+                else{
+                    let num1=$("#num1").val()
+                    let num2=$("#num2").val()
+                    let sum=Number(num1)/Number(num2)
+                    $("#out").val(sum)
+                }
+            })
+
+        })
+    </script> 
+</body>
+</html>

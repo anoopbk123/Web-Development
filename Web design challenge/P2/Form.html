@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input[type="text"]{
+            width: 250px;
+        }
+        input{
+            height: 20px
+        }
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <h1 align="center">Form</h1>
+    <div style="background-color:grey">
+    <center>
+        <h2>Notes</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>
+                        GET
+                    </th>
+                    <th>
+                        POST
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>Both GET and POST are html form methods</tr>
+                <tr>
+                    <td>Grphical user interface extension technique</td>
+                    <td>Power on self test</td>
+                </tr>
+                <tr>
+                    <td>
+                        The data is send in header
+                    </td>
+                    <td>
+                        The data is send in body
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        not secure, data is exposed in url 
+                    </td>
+                    <td>
+                        secure
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        GET is used to get data from server
+                    </td>
+                    <td>POST is used to submit forms</td>
+                </tr>
+            </tbody>
+        </table>
+        <form id="form" action="www.google.com" method="GET">
+            <strong>This is written inside the strong tag<br>
+            The button can be made using the button tag or input tag(type='button' or type='submit')<br>
+        </strong>
+
+        <b>if we click a button or input submit in side the form tag the page will be directed to the site mentioned in the action attribute of form tag<br>
+            <button>ButtonSubmit</button>
+            <input type="Submit"><br>
+            but if it is a input button it will not redirect or submit the form<br>
+
+
+            <input type="button" value="inputbutton"><br>
+            <br>
+            <input type="text" placeholder="enter your name here">
+        </b>
+         <br><input type="submit">   
+        </form>
+        <strong>if the submit button is out side the form tag the form will not be submitted<br>
+            <input type="submit">
+        </strong>
+
+    </div>
+</center>
+    <hr>
+    <div style="background-color:rgb(247, 70, 0)">
+    <center>
+    <b>
+        <form action="yahoo.com" method="POST">
+            <p style="font-size:50px; color:rgb(21, 0, 255)">SignUp</p>
+            <table style="border-spacing:50px; font-size:25px">
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" placeholder="enter your name here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age: 
+                    </td>
+                    <td>
+                        <input type="number" placeholder="enter your age here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Date of birth:
+                    </td>
+                    <td><input type="date"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select your gender:
+                    </td>
+                    <td><input type="radio"  name="gender">Male 
+                        <input type="radio"  name="gender"> Female 
+                        <input type="radio"  name="gender">Other 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea placeholder="Enter your address here" ></textarea> </td>
+                </tr>
+                <tr>
+                    <td>
+                     Occupation:
+                    </td>
+                    <td>
+                        <select>
+                            <option>Student</option>
+                            <option>Teacher</option>
+                            <option>Parent</option>
+                            <option>Non- Teaching faculty</option>
+                            <option>Principal</option>
+                            <option>Manager</option>
+                            <option>Admin</option>
+                        </select>
+                    </td>
+                </tr>           
+        </table>
+        <input type="submit" value="Sign Up">
+            
+        </form> 
+    </b>
+</div>
+</center>    
+    
+    
+</body>
+</html>
