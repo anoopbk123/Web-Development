@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="jpg" href="\images\image.jpg">
+    <title>More html info 2</title>
+    <style>
+        a:link{
+            color:red;
+            text-decoration:none;
+        }
+        a:visited{
+            color:pink;
+            text-decoration:line-through;
+        }
+        a:hover{
+            color:green;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    To set fav icon use- link rel="icon" type="jpg" href="\images\image.jpg"
+    <p style="border:10px solid powderblue;padding:60px" >The css padding property is used to control the distance between the border and the content <br> This is border:10px solid powderblue;padding:60px</p>
+    <p style="border:5px solid tomato; padding:30px; margin:50px">This is border:5px solid tomato; padding:30px; margin:50px <br> Use solid colours for border:2px___ 
+    <br> THe margine property defines the margine outside the border</p>
+    <h3 style="text-decoration:underline;"> Image as a Link</h3>
+    <a href="default.html"><img src="\images\image.jpg"> </a><br>
+    THe a in a tag is anchor<br>
+    <a href="mailto:anoopkavalakkal@gmail.com">Click here to send mail</a><br>
+    Button as a link click <button onclick="document.location='default.asp'">HERE</button><br>
+    The appearance of a link can e designed using CSS <a href="google.com" target="_blank" >like this</a><br>
+    In HTML we can give link to another webpage bookmark<a href="More html info.html#hai">click here</a>
+    <p>
+        HTML elements can be inline (like anchor or span) or block (like h1, p, div)<br>
+        We can give a block in line using css like this <span style="background-color:red; display:inline-block; " onclick="Myfunction()">span</span> element click the span
+    </p>
+    <p style="text-decoration:line-through">This is text-decoration:line-through</p>
+    <h3 style="text-decoration:overline">Image map</h3>
+    <img src="\images\image.jpg" usemap="#Mymap">
+    <map name="Mymap">
+        <area shape="rect" coords="34,44,270,350" href="this/is/area1">
+        <area shape="circle" coords="337,300,44" onclick="MyFunction2">
+    </map>
+    <p style="background-image:url('image.jpg'); opacity:0.5">Hello this is background-image:url('image.jpg'); opacity:0.5</p>
+    <span style="background-color:rgba(255,0,0,0.5)">Hai</span>
+    
+    
+    <script>
+        function Myfunction(){
+            alert('you clicked the span')
+        }
+        function MyFunction2(){
+            alert('this is area 2')
+        }
+    </script>
+</body>
+</html>
