@@ -22,6 +22,7 @@
     </style>
 </head>
 <body>
+    The title in the title tag is used as a title in browser tab and bookmark and it is used for SEO<br> 
     To set fav icon use- link rel="icon" type="jpg" href="\images\image.jpg"
     <p style="border:10px solid powderblue;padding:60px" >The css padding property is used to control the distance between the border and the content <br> This is border:10px solid powderblue;padding:60px</p>
     <p style="border:5px solid tomato; padding:30px; margin:50px">This is border:5px solid tomato; padding:30px; margin:50px <br> Use solid colours for border:2px___ 
@@ -45,8 +46,13 @@
         <area shape="circle" coords="337,300,44" onclick="MyFunction2">
     </map>
     <p style="background-image:url('image.jpg'); opacity:0.5">Hello this is background-image:url('image.jpg'); opacity:0.5</p>
-    <span style="background-color:rgba(255,0,0,0.5)">Hai</span>
-    
+    <span style="background-color:rgba(255,0,0,0.5)">Hai</span><br>
+    <h3> Change the display size to view the effect of picture element</h3>
+    <picture>
+        <source media="(min-width: 650px)" srcset="image2.jpg">
+        <source media="(min-width: 465px)" srcset="image3.jpg">
+        <img src="image.jpg">
+    </picture>
     
     <script>
         function Myfunction(){

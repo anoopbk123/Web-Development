@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <style>
+    </style>
+    <link rel="icon" type="jpg" href="image2.jpg">
+    <title>Table designs in HTML</title>
+</head>
+<body>
+    <h1>Table Designs in HTML</h1>
+    <table border="1" align="center" width="500" height="250">
+        <caption>
+            This is the caption
+        </caption>
+        <thead style="background-color:#ff0000">
+            <tr>
+                <th>
+                    This
+                </th>
+                <th>
+                    is
+                </th>
+                <th>
+                    the
+                </th>
+                <th>
+                    head
+                </th>
+            </tr>
+        </thead>
+        <tbody style="background-color:#00ff00">
+            <tr>
+                <td>
+                    this
+                </td>
+                <td>
+                    is
+                </td>
+                <td>
+                    the
+                </td>
+                <td>
+                    body
+                </td>
+            </tr>
+            
+        </tbody>
+        <tfoot style="background-color:#0000ff">
+            <tr>
+                <td>
+                    this
+                </td>
+                <td>
+                    is
+                </td>
+                <td>
+                    the
+                </td>
+                <td>
+                    foot
+                </td>
+            </tr>
+        </tfoot>
+    </table><br>
+    The height attribute only affect the body of table<br>
+    <table align="center" border="1" style="border:8px solid tomato">
+        <caption>Details</caption>
+        <thead>
+            <tr>
+                <th style="border:8px solid tomato">First name</th>
+                <th style="border:8px solid tomato"> Last name</th>
+                <th style="border:8px solid tomato">Age</th>
+                <th style="border:8px solid tomato">Place</th>
+                <th style="border:8px solid tomato">Phone</th>
+            </tr>
+        </thead>
+        <tbody style="border:8px solid tomato">
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid rgb(71, 114, 255)">
+        <caption>Table, tbody, thead with different colors</caption>
+        <thead style="border:2px solid green">
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody style="border:8px solid tomato">
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid tomato">
+        <caption>colspan</caption>
+        <thead>
+            <tr>
+                <th colspan="2">First name Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid tomato">
+        <caption>Rowspan</caption>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Jill</td>
+                <td >Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td >Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid tomato">
+        <caption>Width of a col, height of row</caption>
+        <thead>
+            <tr>
+                <th width="20">First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th width="50%">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr height="200">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid tomato; border-collapse:collapse" >
+        <caption>single border</caption>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <table align="center" border="1" style="border:2px solid tomato; border-collapse:collapse;" >
+        <caption>colgroup</caption>
+        <colgroup>
+        <col span="2" style="background-color:hsl(60,100%,50%)">
+        <col span="2">
+        <col style="background-color:hsl(180,100%,50%)">
+        </colgroup>        
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr style="background-color:red">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table>the colgroup is defined before body and head and after the caption<br>
+
+    <table align="center" border="1" style="border:2px solid tomato; border-collapse:collapse;" >
+        <caption>colgroup visibility</caption>
+        <colgroup>
+        <col span="2" style="background-color:hsl(60,100%,50%)">
+        <col span="2" style="visibility:collapse">
+        <col style="background-color:hsl(180,100%,50%)">
+        </colgroup>        
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr style="background-color:red">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <table align="center" border="1" style="border:2px solid tomato;border-collapse:collapse;border-style:hidden;">
+        <caption>border style</caption>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody><br>
+    </table>
+    border style can be dotted, dashed, inset, outset, hidden etc
+</body>
+</html>
