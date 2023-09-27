@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table 5</title>
-    <link rel="stylesheet" href="css.css">
     <style>
-       table,th,td{
-        border-collapse:collapse;
-        width:70%;
-        border:2px solid red;
-       }
-       td:nth-child(3){
-        background-color:#555555;
-       }  
+        table{
+            border-spacing:20px;
+            border-style:hidden;
+            text-align:center
+        }
+        th,td{
+            border-color:red;
+            border-radius:6px;
+            
+        }
     </style>
 </head>
 <body>
-    <table align="center" title="hello">
-        <caption>nth child selector</caption>
+    <table border align="center" >
+        <caption>Curved border</caption>
         <thead>
             <tr>
                 <th>First name</th>
@@ -64,8 +65,8 @@
                 <td>US</td>
                 <td>43512435</td>
             </tr>
-        </tbody><br>
-    </table><br>
-<iframe src="table4.html"></iframe> 
+        </tbody>
+    </table>
+
 </body>
 </html>

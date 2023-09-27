@@ -19,6 +19,29 @@
             color:green;
             text-decoration:underline;
         }
+        .span-design{
+            border:5px solid red;
+            display:inline-block;
+            border-radius:100px;
+            padding:30px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: bisque;
+            color: rgb(243, 13, 139);
+
+        }
+        .span-design:hover{
+            background-color: rgb(0, 0, 0);
+        }
+        .span-design:active{
+            background-color:rgb(0, 255, 76);
+        }
+        .input-design:focus{
+            background-color:aquamarine;
+        }
+        #float>li{
+            float:left;
+            width:100px;
+        }
     </style>
 </head>
 <body>
@@ -53,6 +76,35 @@
         <source media="(min-width: 465px)" srcset="image3.jpg">
         <img src="image.jpg">
     </picture>
+    <h3> border padding and radius in span </h3>
+    dsfasdf    <button>hail</button> click this <span class="span-design" title="inline-block element">hello</span> to view the change made using css pseudo-classes<br>
+    <input class="input-design" type="text">Click inside the input text<br>
+    <ul style="list-style-type:circle">
+        <h3>Other HTML elements</h3>
+        <li><address>address:Used to specify address</address></li>
+        <li><main>main:this element is used to specify main part of a html page. One page only have one main element</main></li>
+        <li><footer>footer:to specify footer of a web page</footer></li>
+        <li><article>article:to psecify articles</article></li>
+        <li><nav>Nav: the navigation element is used to give a group of links</nav></li>
+        <li>noscript:it is used to display the content in the element if the browser does not support scripts</li>
+        <li><section>section:used to define sections</section></li>
+        <li><dfn>dfn:definition element</dfn></li>
+        <li><canvas width="55" style="border:2px solid black">thhr</canvas>canvas:it is a container for graphics. used to add graphics in web page using js. text inside the canvas element is invisible</li>
+    </ul>
+    <ul id="float">
+        <li>this</li>
+        <li>is</li>
+        <li>float</li>
+    </ul><br>
+    <figure>
+        <img src="gif.gif">
+        <figcaption>this is figcaption</figcaption>
+    </figure>
+
+    <h3>Object element</h3>
+    it is used to embed pluggins in the browser. using object we can also add audio, video, image, webpage
+    <object data="table4.html"></object>webpage using object
+    <object data="/p1/video.mp4"></object>video using object
     
     <script>
         function Myfunction(){

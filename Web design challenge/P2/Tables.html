@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <style>
+        .curvedBorder{
+            border-radius:10px;
+            border:2px solid tomato;
+            border-spacing:20px;
+            border-style:dashed;
+        }
+        .curvedBorder>tbody>tr>td{
+            border-radius:10px;
+            border:2px solid tomato;
+            border-spacing:20px;
+            border-style:dashed;
+        }
+        .curvedBorder>thead>tr>th{
+            
+                border-radius:10px;
+                border:2px solid tomato;
+                border-spacing:20px;
+                border-style:dashed;
+        }
+        .curvedBorder>tbody>tr>td:nth-child(4),.curvedBorder>thead>tr>th:nth-child(even){
+            color:red;
+        }
+        #span-design2{
+            border:1px solid white;
+            padding:30px;
+            display:inline-block;
+            border-radius:500px;
+            background-color: #ff0000;
+
+        }
+        #span-design2:hover{
+            background-color:#00ff00;
+        }
+        #span-design2:active{
+            background-color:#00ff;
+        }
+        #bottomBorder{
+            border-style:hidden;
+            border-collapse:collapse;
+            width:500px
+        }
+        table#bottomBorder tr{
+            border-bottom:2px solid tomato;
+        }
     </style>
     <link rel="icon" type="jpg" href="image2.jpg">
     <title>Table designs in HTML</title>
@@ -523,6 +567,111 @@
             </tr>
         </tbody><br>
     </table>
-    border style can be dotted, dashed, inset, outset, hidden etc
+    border style can be dotted, dashed, inset, outset, hidden etc<br>
+
+    <table align="center" class="curvedBorder" border>
+        <caption>Curved border</caption>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody>
+    </table><br>
+    in css '>' is used to select the immediate child<br>
+
+    <table align="center" id="bottomBorder">
+        <caption>Bottom border</caption>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th> Last name</th>
+                <th>Age</th>
+                <th>Place</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+                <td>US</td>
+                <td>43512435</td>
+            </tr>
+        </tbody><br>
+    </table>
+
+
+
+    <span id="span-design2">........</span>
 </body>
 </html>
