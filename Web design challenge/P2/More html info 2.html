@@ -42,6 +42,9 @@
             float:left;
             width:100px;
         }
+        #op:hover{
+            opacity: 0.5;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +72,7 @@
         <area shape="circle" coords="337,300,44" onclick="MyFunction2">
     </map>
     <p style="background-image:url('image.jpg'); opacity:0.5">Hello this is background-image:url('image.jpg'); opacity:0.5</p>
+    <p style="background-image:url('image.jpg');" id="op">Hello this is background-image:url('image.jpg'); opacity:0.5</p>
     <span style="background-color:rgba(255,0,0,0.5)">Hai</span><br>
     <h3> Change the display size to view the effect of picture element</h3>
     <picture>
@@ -104,8 +108,10 @@
     <h3>Object element</h3>
     it is used to embed pluggins in the browser. using object we can also add audio, video, image, webpage
     <object data="table4.html"></object>webpage using object
-    <object data="/p1/video.mp4"></object>video using object
-    
+    <object data="/p1/video.mp4"></object>video using object<br>
+    <a href="image.jpg" download="image">click here to download image</a><br>
+    <br><object data="Anoop B K for _NeCTAR 2023_.pdf"></object>pdf in object element
+
     <script>
         function Myfunction(){
             alert('you clicked the span')
