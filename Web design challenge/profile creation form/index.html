@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Candidate Profile</h1>
+    <div id="form">
+        <div class="container">
+        <form action="google.com" target="_blank" autocomplete="on" oninput="out.value=parseInt(commu.value)">
+            <input type="hidden" id="id" name="id" value="id">
+            <div class="item">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter name here" required autofocus><br>
+        </div>
+            <div class="item">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="enter age" min="10" max="110" step="2"><br>
+        </div>
+        <div class="item">
+            <label for="dob">Date of birth</label>
+            <input type="date" id="dob" name="dob" max="2023-01-01" min="2000-01-01">
+        </div>
+        <div class="item">
+            <label for="expire">Select the end of service</label>
+            <input name='expire' id="expire" type="datetime-local">
+        </div>
+            <div class="item">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </div>
+            <div class="item">
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass"><br>
+        </div>
+            <div class="item">
+            <label for="nat">Select Nationality:</label>
+            <select name="nat" id="nat">
+                <optgroup label="countries">
+                <option>India</option>
+                <option>China</option>
+                <option selected>Nepal</option>
+            </optgroup>
+            </select><br>
+        </div>
+            <div class="item">
+            <label for="ph">Phone:</label>
+            <input name="ph" id="ph" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        </div>
+            <div class="item">
+            <label for="adr">Address:</label><br>
+            <textarea cols="10" rows="10" id="adr" name="adr" placeholder="enter address" maxlength="20"></textarea><br>
+        </div>
+            <div class="item multi"><label>Select Gender:</label><br>
+            <input type="radio" name="gen" id="M">
+            <label for="M">Male</label>
+            <input type="radio" name="gen" id="F">
+            <label for="F">Female</label>
+            <input type="radio" name="gen" id="O">
+            <label for="O">Other</label><br>
+            </div>
+            <div class="item">
+            <label for="fl">Select profile picture:</label>
+            <input type="file" id="fl" name="file" accept=".jpg"><br>
+        </div>
+            <div class="item">
+            <label for="lang">Select Languages Known:<br></label>
+            <select name="lang" id="lang" size="4" multiple>
+                <option>English</option>
+                <option>Malayalam</option>
+                <option>Tamil</option>
+                <option>Hindi</option>
+            </select><br>
+        </div>
+        <div class="item">
+            <label for="url">Website URL:</label>
+            <input type="url" id="url" name="url" value="github.com">
+        </div>
+            <div class="item multi">
+            <label for="skill">Skills:</label><br>
+            <input type="checkbox" id="py" name="py">
+            <label for="py">Python</label>
+            <input type="checkbox" id="c" name="c" checked>
+            <label for="c">C</label>
+            <input type="checkbox" id="jva" name="jva">
+            <label for="jva">Java</label><br>
+        </div>
+        <div class="item">
+            <label for="commu">Rate your communication skill:</label>
+            <input type="range" id="commu" name="commu">
+            <output for="commu" name="out"></output>
+        </div>
+        <div class="item">
+            <label for="quali">Highest Qualification:</label>
+            <input type="text" list="quali" name="quali">
+            <datalist id="quali">
+                <option value="Post Graduation">
+                <option value="Under Graduation">
+                <option value="Plus Two">
+                <option value="Other">
+            </datalist>
+        </div>
+        <div class="item">
+            <label for="passyear">Passout Year and month:</label>
+            <input type="month" id="passyear" name="passyear">
+        </div>
+        <div class="item">
+            <label for="theme">Select Profile theme:</label>
+            <input type="color" id="theme" name="theme" disabled>
+        </div>
+        <div class="item">
+            <label for="reminder">Set reminder:</label>
+            <input type="time" id="reminder" name="reminder">
+        </div>
+
+
+
+
+            <div class="item divbtn">
+            <input type="Submit" value="Submit" class="btn" onclick="window.alert('submitted')">
+            <input type="reset" class="btn">
+        </div>
+            
+
+            
+            
+        </form>
+    </div>
+
+        
+
+
+
+    </div>
+    
+</body>
+</html>
