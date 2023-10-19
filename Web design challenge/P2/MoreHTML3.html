@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        #abc{
+            border:2px solid red;
+            width: 20%;
+        }
+        @media screen and (min-length:80px){
+            #abc{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p id="a"></p>
+    <p>hidden is a global attribute used to hide an element</p>
+    <p hidden>hello</p>
+    <p accesskey="c" contenteditable="true" spellcheck="true">This content is editable and atuo spall check. Press alt+c</p>
+    The base element specifice the relative url in a percentage<br>
+    summary element and details element<br>
+    responsive image
+    <img src="image.jpg" style="max-width:100%;height:auto">
+    <div style="border:2px solid red;overflow-wrap:break-word">rwyywfdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <h1 style="font-size:10vw">This is resposive text</h1>
+    * is a universal selector<br>
+    <div id="abc">hai</div>
+    <p dir="rtl">this is dir attribute</p>
+    <bdo>this is bdo tag</bdo>
+    <h3>HTML Entities</h3>
+    &lt &gt &nbsp; &copy &reg<br>
+    <input id="c" type="text" onkeyup="val()"><br>
+    <input id="d" type="text" readonly>
+
+    <script>
+        document.getElementById('a').innerHTML='hello';
+        document.getElementById('a').style.color='red';
+
+        function val(){
+            var val=document.getElementById('c').value;
+            document.getElementById('d').value=parseInt(val)+5;
+            
+        }
+    </script>
+</body>
+</html>
