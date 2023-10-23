@@ -9,8 +9,9 @@
         #abc{
             border:2px solid red;
             width: 20%;
+            overflow-wrap: break-word;
         }
-        @media screen and (min-length:80px){
+        @media screen and (min-width:800px){
             #abc{
                 width:100%;
             }
@@ -28,14 +29,36 @@
     <img src="image.jpg" style="max-width:100%;height:auto">
     <div style="border:2px solid red;overflow-wrap:break-word">rwyywfdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
     <h1 style="font-size:10vw">This is resposive text</h1>
-    * is a universal selector<br>
-    <div id="abc">hai</div>
-    <p dir="rtl">this is dir attribute</p>
-    <bdo>this is bdo tag</bdo>
+    <div id="abc">hai media query is used to set its size</div>
     <h3>HTML Entities</h3>
+    for reserved charecters<br>
     &lt &gt &nbsp; &copy &reg<br>
-    <input id="c" type="text" onkeyup="val()"><br>
-    <input id="d" type="text" readonly>
+    &spades;&hearts;&diams;<br>
+    &uarr;<br>
+    <h3>HTML Imogies</h3>
+    &#128507;&#128508;&#128509;&#128510;&#128511;&#128555;<br>
+    <input id="c" type="text" onkeyup="val()" placeholder="enter a number"><br>
+    <input id="d" type="text" readonly><br>
+    <b>The time element is used to specify the time in a html page</b> <time>10:30</time><br>
+    <h3>progress element</h3>
+    <progress></progress>
+    must give max and value attributes<br>
+    <progress value="30" max="100">30</progress><br>
+    <h3>Meter element</h3>
+    <meter></meter>
+    used for salar measurement<br>
+    <meter value="30" max="100"></meter>
+    <h3>Dialog  Element</h3>
+    <dialog open>This a dialogbox</dialog><br>
+
+    <h3>local storage and session storage</h3>
+    <p id="strg"></p>
+    <p id="strg2"></p>
+
+    <video controls>
+        <source src="\P1\video.mp4" type="video/mp4">
+        <track src="Mr-Robot-s10-e2_1080p-English---English-[CC].vtt" kind="subtitles" srclang="en" label="English">
+    </video>
 
     <script>
         document.getElementById('a').innerHTML='hello';
@@ -46,6 +69,17 @@
             document.getElementById('d').value=parseInt(val)+5;
             
         }
+
+        const list=[1,2,3,4,5]
+        sessionStorage.setItem('list',list);
+        document.getElementById('strg').innerHTML=sessionStorage.getItem('list');
+        console.log(typeof document.getElementById('strg').value)
+
+        var ls=JSON.stringify(list)
+        sessionStorage.setItem('ls',ls)
+        var ls2=sessionStorage.getItem('ls')
+        var ls2=JSON.parse(ls2)
+        document.getElementById('strg2').innerHTML=ls2;
     </script>
 </body>
 </html>

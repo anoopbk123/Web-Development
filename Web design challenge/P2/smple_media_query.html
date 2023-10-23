@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Media Query</title>
+    <style>
+        #container{
+            display:flex;
+        }
+        #a{
+            border: 2px solid red;
+            text-align: center;
+            padding: 5%;
+            width:50%;
+            margin:2%;
+        }
+        #b{
+            border: 2px solid red;
+            text-align: center;
+            padding: 5%;
+            width:50%;
+            margin:2%;
+        }
+        @media screen and (max-width:355px){
+            #container{
+                flex-direction: column;
+            }
+            #a{
+                width:80%;
+                margin:auto;
+                margin-bottom: 2%;
+            }
+            #b{
+                width:80%;
+                margin:auto;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+    <div id="a">a</div>
+    <div id="b">b</div>
+    </div>
+</body>
+</html>
