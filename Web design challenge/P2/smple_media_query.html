@@ -8,7 +8,8 @@
         #container{
             display:flex;
         }
-        #a{
+        .a{
+            flex:1;
             border: 2px solid red;
             text-align: center;
             padding: 5%;
@@ -16,13 +17,14 @@
             margin:2%;
         }
         #b{
+            flex:1;
             border: 2px solid red;
             text-align: center;
             padding: 5%;
             width:50%;
             margin:2%;
         }
-        @media screen and (max-width:355px){
+        @media screen and (max-width:500px){
             #container{
                 flex-direction: column;
             }
@@ -36,13 +38,21 @@
                 margin:auto;
             }
         }
+        p{
+            border: 2px solid red;
+        }
+        #c{
+            flex:5;
+        }
     </style>
 
 </head>
 <body>
     <div id="container">
-    <div id="a">a</div>
-    <div id="b">b</div>
+    <div class="a"><p>asdasdf</p> <p>asdfgasfga</p></div>
+    <div id="b"><p>asdasdv</p></div>
+    <div class="a"><p>asdasdf</p> <p>asdfgasfga</p></div>
+    <p id="c">asdasdf</p>
     </div>
 </body>
 </html>

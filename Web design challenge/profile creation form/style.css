@@ -3,7 +3,8 @@ body{
     line-height: 2;
 }
 h1{
-    font-style: inherit;
+    font-style:inherit;
+    font-weight:bold;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(45, 192, 233);
@@ -21,6 +22,8 @@ input:focus,select:focus,textarea:focus{
     width:20px;
     overflow-wrap: break-word;
     padding:5%;
+    margin:auto;
+    margin-right:1%;
     
 
 }
@@ -38,6 +41,7 @@ input:focus,select:focus,textarea:focus{
     display:flex;
     justify-content:space-between;
     padding: 1%;
+    margin:auto;
 }
 label{
     flex:1;
@@ -65,4 +69,24 @@ input[type="email"],input[type="tel"],input[type="password"],input[type="text"],
 }
 input[type="radio"],input[type="checkbox"]{
     height: 15px;
+}
+@media screen and (max-width:800px){
+    .item{
+        flex-direction: column;
+    }
+    .divbtn{
+        width: 100%;
+        margin:auto;
+    }
+    .btn{
+        margin:auto;
+        text-align: center;
+        padding:1%;
+        width:20vw;
+        margin-bottom: 1%;
+    }
+    .container{
+        border-radius: 3%;
+    }
+
 }

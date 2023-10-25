@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc">abcd</div>
+    <p id="p">click button to hide me <button onclick="document.getElementById('p').style.display='none'">click</button></p>
+    <button onclick="window.print()">print</button>
+
+    <script>
+        document.getElementById('abc').innerHTML+='<br>hello';
+        document.write('hai');
+        document.getElementsByTagName('body')[0].innerHTML+='<div style="border:2px dotted red">This is a div</div>';
+        //The [0] is used because getElementsByTagName returns a collection (a NodeList) of elements, even if there's only one element with that tag name. To access the first (and typically the only) element in that collection, you use [0].
+        document.body.innerHTML+='hello';
+        alert('welcome');
+    </script>
+</body>
+</html>
