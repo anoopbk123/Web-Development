@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+
+    </div>
+
+    <script>
+        const name={
+            first_name:'abu',
+            last_name:'babu',
+            full_name:function(){return this.first_name+" "+this.last_name;}
+        }
+        
+        const ls=[1,2,3,4]
+        document.getElementById('a').innerHTML=name
+        document.getElementById('a').innerHTML+='<br>'+name.full_name();
+        document.getElementById('a').innerHTML+='<br>'+name.last_name;
+        document.getElementById('a').innerHTML+='<br>'+ls;//java script automatically convert the array as string
+        document.getElementById('a').innerHTML+='<br>'+JSON.stringify(name);
+    </script>
+</body>
+</html>

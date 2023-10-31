@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <button onclick="document.body.style.backgroundColor='black'">black</button>
+    <div id="a" contenteditable="true"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    
+    <script>
+        document.getElementById('btn').onclick=fun;//event handler used to call function. If we call fun() it will call the fun immediately. but by giving only function name it will execute when event is triggered
+
+        function fun()
+        {
+            document.getElementById('a').innerHTML+='<br>cick';
+        }
+
+        document.getElementById('b').innerHTML+=fun2;//passed as a string. function is not invoked
+        document.getElementById('c').innerHTML+=fun2();
+
+        function fun2(){
+            return 'hai'
+        }
+        console.log(fun2)
+        console.log(fun2())
+
+    </script>
+</body>
+</html>

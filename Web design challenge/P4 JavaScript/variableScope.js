@@ -15,3 +15,15 @@ function fun(){
 }
 fun()
 //console.log(f);//var variables declared inside the function will not have a global scope
+
+var x='x'
+console.log(x);
+//const x='x2'//error
+const y='y'
+//var y='y2'//error
+{
+    const y='y3'
+    console.log(y)
+    const x='x3'
+    console.log(x)
+}

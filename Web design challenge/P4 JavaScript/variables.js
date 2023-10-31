@@ -13,7 +13,9 @@ console.log(typeof a)
 
 
 //const
-const list=[1,2,3]
+const list=[1,2,3]//const must be assigned with a value when they are declared
+//const yx;//shows error
+//In const variable the reference to the value is saved and it cannot be changed so it cannot reassign. when changing items in an array only the items are changed not the reference to the array;
 console.log(list)
 list[0]=0;
 console.log(list)
