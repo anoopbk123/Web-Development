@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    
+    <script>
+        var headder = 'String Template';
+        let tags = ['abcd','asdf','sdf'];
+        let html = `<h1>${headder}</h1><ul>`;
+        for (let item of tags){
+            html+=`<li>${item}</li>`;
+        }
+        html+='</ul>';
+        document.body.innerHTML=html;
+        document.body.style.textAlign='center';
+    </script>
+</body>
+</html>
