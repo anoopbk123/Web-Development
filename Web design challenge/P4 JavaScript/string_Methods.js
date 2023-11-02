@@ -1,10 +1,10 @@
 //strings are immutables and the string methods return new string;
 
 //length
-const str = 'length';
+const str = 'lengthgg';
 console.log ('length\t'+str.length)
 
-//splice it takes two arguments start and end(excluded, not compalsory) indexes;
+//slice it takes two arguments start and end(excluded not compalsory) indexes, if nothig to return an empty string will bw the output;
 console.log('slice\t' + str.slice(1,6));
 console.log(str.slice(3));
 console.log(str);
