@@ -4,7 +4,7 @@ console.log('indexOf\t'+froots.indexOf('Orrange'));
 console.log('indexOf\t'+froots.indexOf('o'));//case sensitive if not found return -1;
 console.log('\nIndexOf\t'+froots.indexOf('Orrange',16));
 
-//lastIndexOf.return first index. case sensitive if not found return -1. second parameter is used for starting position of search;
+//lastIndexOf.return first index. case sensitive if not found return -1. second parameter(exclusive) is used for ending position of search;
 console.log('\nlastIndexOf\t'+froots.lastIndexOf('Orrange'));
 console.log('\nlastIndexOf\t'+froots.lastIndexOf('Orrange',23));
 
@@ -28,6 +28,6 @@ console.log('include\t'+froots.includes('Orr',15));
 console.log('\nstartsWith\t'+froots.startsWith('Ban'));
 console.log('startsWith\t'+froots.startsWith('A',8));
 
-//endsWith. case sensitive. 2nd argument start position(excluded);
+//endsWith. case sensitive. 2nd argument end position(excluded);
 console.log('\nendsWith\t'+froots.endsWith('ge'));
 console.log('\nendsWith\t'+froots.endsWith('na',6));

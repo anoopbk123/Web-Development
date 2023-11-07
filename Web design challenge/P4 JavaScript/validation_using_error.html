@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input validation</title>
+</head>
+<body>
+    <input type="text" id="input"><button onclick="validate()" id="btn">validate</button><br>
+    <span id="errorMessage"></span>
+
+    <script>
+        function validate(){
+            let input=document.getElementById('input').value;
+            let errorMessage=document.getElementById('errorMessage');
+            try{
+                if (input.trim()==''){
+                    throw 'empty';
+                }
+                else if(isNaN(input)){
+                    throw 'not a number';
+                }
+                else{
+                    input = Number(input);
+                    if(input>10){
+                        throw 'number is too high';
+                    }
+                    else if(input<5){
+                        throw 'number is too low';
+                    }
+                }
+            }
+            catch(error){
+                errorMessage.innerHTML='input is '+error;
+            }
+            finally{
+                document.getElementById('input').value = ''
+            }
+        }
+    </script>
+</body>
+</html>

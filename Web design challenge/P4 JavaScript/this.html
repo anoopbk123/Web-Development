@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="this.style.display='none'">click to hide </button>
+<!--this outside any block will  be global object
+    this inside a rgular object will be global object and inside method of any object is object itself
+    this inside a strict mode is undefind
+    this inside the constructor is object-->
+    <script>
+        class A{
+            num = 10;
+            constructor(string){
+                this.string2=string;
+                var num2 = 7;
+                this.name = 'babu'
+                console.log(this);
+                console.log(this.string2);
+            }
+        }
+        let str = new A('str');
+        console.log(str.string2);
+        let str2 = new A('hello');
+        console.log(str);
+        class B{constructor(){}};
+        let b = new B();
+        console.log(b);
+        console.log(str);
+        console.log(str2);
+
+
+    </script>
+</body>
+</html>

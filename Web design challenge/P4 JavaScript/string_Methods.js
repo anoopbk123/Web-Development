@@ -42,6 +42,7 @@ console.log('trim'+h.trim());
 console.log('trimstart'+h.trimStart());
 console.log(h.trimEnd()+'trimend');
 
+
 //charAt
 console.log('\ncharat\t'+pets.charAt(0));
 console.log('\ncharat\t'+pets.charAt());//if out off index return empty string;
@@ -65,3 +66,8 @@ const hai = 'hai'
 console.log('padend\t'+hai.padEnd(4,'oo'));
 console.log('padend\t'+hai.padEnd(6,'oo'));
 console.log('padstart\t'+hai.padStart(8,'oo'));
+
+//trim can be used to check wether a string ahave only space
+var x = '    '
+x==''?console.log('empty'):console.log('not empty');
+x.trim()==''?console.log('empty'):console.log('not empty');

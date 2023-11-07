@@ -1,3 +1,4 @@
+//a function in an object is called method
 const car={
     name:'BMW',
     model:'a10',
