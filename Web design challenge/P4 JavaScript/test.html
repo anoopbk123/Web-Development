@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Closure Example</title>
+</head>
+<body>
+    <button id="btn" onclick="count()">click</button>
+    <p id="count"></p>
+    <button id="btn2" onclick="count2()">click</button>
+    <p id="count2"></p>
+    <script>
+        const element = document.getElementById('count');
+        const element2 = document.getElementById('count2');
+
+        // Separate increment functions for co and co2
+        const co = init();
+        const co2 = init();
+
+        document.getElementById('btn').onclick = function() {
+            count(element, co);
+        };
+        document.getElementById('btn2').onclick = function() {
+            count(element2, co2);
+        };
+
+        function init() {
+            let c = 0;
+
+            function increment() {
+                return c++;
+            }
+
+            return increment;
+        }
+
+        function count(element, cof) {
+            element.innerHTML = cof();
+        }
+    </script>
+</body>
+</html>

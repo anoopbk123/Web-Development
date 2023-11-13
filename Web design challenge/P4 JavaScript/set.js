@@ -15,7 +15,10 @@ console.log(set);
 console.log(`size of set ${set.size}`);
 //has
 console.log(set.has(2));
-//values
+//values.return items of iterator
 console.log(set.values());
 //forEach
 set.forEach(item=>console.log(item));
+//clear. clear all the element
+set.clear()
+console.log(set)

@@ -1,4 +1,5 @@
 //map holds key value pairs of list
+//keys can be string or numbers
 const map = new Map([["one", 1], ['two', 2], ['three', 3]]);
 console.log(map);
 //console.log(map[0]);
@@ -17,3 +18,6 @@ console.log(map);
 console.log(map.has('two'));
 //forEach
 map.forEach((value, key)=>console.log(`${key}\t${value}`));
+//clear
+//keys
+console.log(map.keys())
