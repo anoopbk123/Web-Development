@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" align="right">hello</p>
+    <p id="p3">this is p3</p>
+    <p id="p4"></p>
+
+    <script>
+        //every html element is a node and object. html is the root node
+        //elements have properties like innerHTML, value.. and methods like setAttribute
+        //the attributes are in attribute node and the text are the child of element node in text node
+        //changing attribute value
+        //element.attribute='value' or element.setAttribute(attribute, value)
+        const p1 = document.getElementById("p1");
+        p1.align="center";
+        p1.style.border = "2px solid";
+        p1.setAttribute('value', 'abc');
+        console.log(p1);
+        
+
+        //create element, append,remove,replace child
+        let p2 = document.createElement('p');
+        p2.innerHTML = 'this is p2';//can also use textContent property. The difference is we can add html tag with innerHTML
+        p2.id = 'p2'
+        document.body.appendChild(p2);
+        console.log(p2);
+
+        let p3 = document.getElementById('p3');
+        document.body.removeChild(p3);
+        //document.body.replaceChild(p3 new,p1 old)
+
+        //html objects
+        //document.body,head,images,forms
+        console.log(document.doctype);
+        console.log(document.documentElement);
+        console.log(document.cookie);
+        console.log(document.domain);
+        console.log(document);
+       
+        //getelementbyid,classname,tagname are dynamic html collectors they return live html collection of html elements
+        //query selectorall can be used to select using css selector. it returns live node listing. including attribute, element, textnode
+        document.querySelector('#p4').innerHTML='this is p4';
+        console.log(document.querySelectorAll('p'))
+
+
+
+    </script>
+</body>
+</html>

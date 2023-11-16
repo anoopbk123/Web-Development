@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node</title>
+    <style>
+      div {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" style="border: 2px solid">
+      dfgsdf
+      <div style="border: 2px solid">
+        inside div1<br />
+        <div id="b" style="border: 2px solid">inside div1 child div</div>
+      </div>
+      <br />
+      <div style="border: 2px solid">inside div2</div>
+    </div>
+
+    <a id="a1" href="google.com">google</a>
+    <script>
+      const container = document.getElementById('container');
+      let a = container.firstChild.nodeValue;//first child is the text node
+      console.log(a)
+      container.lastElementChild.style.color='red'
+      document.getElementById('b').parentElement.style.color='green'
+      console.log(container.childNodes)//return a dynamic node list
+      console.log(container.childNodes[0])
+      console.log(container.id);
+      console.log(document.getElementsByTagName('a')[0].href);
+
+      const para = document.createElement('p')
+      const text = document.createTextNode('this is text node');
+      para.appendChild(text);
+      document.body.appendChild(para)
+    </script>
+  </body>
+</html>

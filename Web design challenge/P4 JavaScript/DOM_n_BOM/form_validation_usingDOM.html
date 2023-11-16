@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form
+      name="frm1"
+      method="post"
+      action="google.com"
+      id="frm"
+      onsubmit="return validate()"
+    >
+      <label>Name:<input name="cname" type="text" /> </label><br /><br />
+      <label>Age:<input type="number" name="age" /> </label><br /><br />
+      &nbsp;<input type="submit" name="sub" />
+    </form>
+
+    <script>
+      let frm1 = document.forms["frm1"];
+
+      function validate() {
+        //use frm1.elements[i] in forloop
+        let nam = frm1["cname"].value;
+        let age = frm1["age"].value;
+        if (nam.trim() == "" || age == "") {
+          alert("enter name and age");
+          return false;
+        } else if (/\d/.test(nam)) {
+          alert("name cannot contain a digit");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

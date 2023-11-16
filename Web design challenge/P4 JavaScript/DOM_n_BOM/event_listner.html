@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventListner</title>
+  </head>
+  <body>
+    <div id="parent1" style="border:2px solid">
+      the addEventListner() have three arguments event name, event handler
+      functioin and usecapture.<br />
+      uncaptuer is false as default. If it is true the parent will respond to
+      the event first
+      <br />
+    </div><br>
+
+    <div style="border:2px solid" id="parent2">usecapture true
+        <button id="btn2">click</button>
+    </div>
+    <br>
+    <div style="border:2px solid" id="parent3">stop propagation used to stop bubbling
+        <button id="btn3">click</button>
+    </div>
+
+    <script>
+      //usecapture false  
+      const btn1 = document.createElement("button");
+      const parent1 = document.getElementById('parent1')
+      btn1.id = "btn1";
+      btn1.textContent = "click";
+      parent1.appendChild(btn1);
+      btn1.addEventListener("click", function () {
+        alert("clicked button1");
+      });
+      parent1.onclick=()=> alert('clicked parent 1');
+
+      //use capture true
+      const parent2 = document.getElementById('parent2');
+      const btn2 = document.getElementById('btn2');
+      btn2.addEventListener("click", function () {
+        alert("clicked button2");
+      }, true);
+      parent2.addEventListener("click", function () {
+        alert("clicked parent2");
+      }, true);
+
+      //resize event
+      addEventListener('resize', ()=> alert('resized'));
+
+      //stop propagation to stop bubbling
+      const parent3 = document.getElementById('parent3');
+      const btn3 = document.getElementById('btn3');
+      btn3.addEventListener("click", function () {
+        alert("clicked button3");
+        event.stopPropagation();
+      });
+      parent3.addEventListener("click", function () {
+        alert("clicked parent3");
+        
+      });
+
+    </script>
+  </body>
+</html>

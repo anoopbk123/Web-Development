@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+  </head>
+  <body>
+    <script>
+      const btn = document.createElement("button");
+      btn.textContent = "cick";
+      btn.id = "btn1";
+      document.body.appendChild(btn);
+      btn.onclick = myFunction;
+
+      function myFunction(event) {
+        event.target.style.color='red';
+        document.body.innerHTML += `all event handlers are passed with an object called event<br>\
+        which have properties target (the element in wich the event triggered) and type of event here<br>\
+        ${event.target}<br>${event.type}`;
+      }
+      //console.log(btn)
+    </script>
+  </body>
+</html>
