@@ -6,6 +6,7 @@
     <title>events</title>
   </head>
   <body>
+    <button id="btn2">bbb</button>
     <script>
       const btn = document.createElement("button");
       btn.textContent = "cick";
@@ -20,6 +21,12 @@
         ${event.target}<br>${event.type}`;
       }
       //console.log(btn)
+
+      let btn2 = document.getElementById('btn2')
+      btn2.addEventListener('click', myFun);
+      function myFun(){
+        console.log(event.target)
+      }
     </script>
   </body>
 </html>

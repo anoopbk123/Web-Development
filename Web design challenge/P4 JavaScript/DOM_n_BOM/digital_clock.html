@@ -27,6 +27,9 @@
             let hour = date.getHours();
             let minit = date.getMinutes();
             let seconds = date.getSeconds();
+            if(seconds == 10){
+                document.write('<p align="center">&hearts;</p>')
+            }
             document.getElementById("container").innerHTML=`${hour} ${minit} ${seconds}`;
         }
     </script>

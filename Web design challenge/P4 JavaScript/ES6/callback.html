@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <button id="btn">click</button>
+    <script>
+        //A function that is passed as an argument to another function and is executed after the completion of some asychronous operation or a spesific event
+        //examples for callbacks are addEventListner(event, function), setTimeout(function,milsec), setInterval
+        const btn = document.getElementById('btn')
+        btn.onclick = myFunction;//example for callback. here an argument is automaticaly passed
+        function myFunction(args){
+            //here arg is passed from onclick
+            console.log(args);
+            //console.log(onclick)
+            
+        }
+        myFunction(10)//normal function
+        //btn.addEventListener("dblclick",function(){console.log('click')})
+        setInterval(()=>myFunction(11),5000);
+        //all above call backs are examble for asynchronous callbacks which are not exicuted as normal thread of execution (not excuted line by line executed asynchronously) but executed another thread of execution
+        //synchronus callback
+        //forEach is and other ustility functioins like map, filter are examble for sychronus callback
+        //they execte with the main thread
+        const array = [1, 2, 3, 4, 5];
+        array.forEach(arrvalue);//arrvalue is a callback function passed as an argument to forEach. The forEach pass array value, index, array as an argument to arrayvalue function for each value of array
+        //forEach method call the arravalue function for each value of array item
+        function arrvalue(value, index, arr){
+            console.log(value+' '+index)
+        }
+
+
+    </script>
+</body>
+</html>
