@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <button onclick="window.open()">open</button>
+    <button onclick="window.close()">close</button>
+    <button onclick="window.location.href='google.com'">open location</button>
+    <button onclick="confirmName()">confirm</button>
+    <script>
+        console.log(window.innerHeight);
+        console.log(innerWidth);
+        console.log(screen.width);
+        console.log(screen.availWidth);
+        console.log(location.href);
+        console.log(location.hostname);
+        console.log(location.protocol);
+        console.log(location.pathname);
+        console.log(history);
+        console.log(navigator.cookieEnabled);
+        console.log(navigator.appCodeName);
+        console.log(navigator);
+        console.log(navigator.onLine);
+
+        var cname = prompt('enter your name');
+        function confirmName(){
+            result = confirm(`Your name is ${cname}`);
+            console.log(result);
+            document.cookie = `cname:${cname}`;
+            console.log(document.cookie);
+            let i = document.cookie.indexOf('cname')
+            let cumstomerName = document.cookie.substring(i);
+            alert(`hello ${cumstomerName}`);
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node</title>
+    <style>
+      div {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" style="border: 2px solid">
+      dfgsdf
+      <div style="border: 2px solid">
+        inside div1<br />
+        <div id="b" style="border: 2px solid">inside div1 child div</div>
+      </div>
+      <br />
+      <div style="border: 2px solid">inside div2</div>
+    </div>
+
+    <a id="a1" href="google.com">google</a>
+
+    <script>
+      console.log(document.getElementsByTagName('div'))
+      console.log(document.querySelectorAll('div'))
+    </script>
+  </body>
+</html>
