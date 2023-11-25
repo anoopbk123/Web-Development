@@ -1,7 +1,7 @@
 //self calling function
 (function(){
     console.log('heloo');
-}());
+})();
 
 //recursive functio
 

@@ -1,0 +1,1 @@
+//prototypes are used insted of class before classes. prototypes are not used now

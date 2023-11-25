@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            gap: 5px;
+        }
+        button{
+            flex:1;
+            
+        }
+        @media screen and (max-width: 400px){
+            body{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var obj = [{
+            name: 'one',
+            msg: 'hello i am one'
+        },
+        {
+            name: 'two',
+            msg: 'hello i am two'
+        },
+        {
+            name: 'three',
+            msg: 'hello i am three'
+        }];
+        
+        obj.forEach(item=>{
+            const btn = document.createElement('button');
+            btn.innerHTML = item.name;
+            btn.onclick = callBack(item.msg);
+            document.body.appendChild(btn);
+        })
+
+        //closure
+        function callBack(m){
+            return () => alert(m);
+        }
+
+    </script>
+</body>
+</html>

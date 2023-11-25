@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter and Setter</title>
+</head>
+<body>
+    <script>
+        class Button{
+            constructor(name){
+                this.btn = document.createElement('button');
+                this.btn.innerHTML = name;
+                this.btn.style.margin = '2px'
+                document.body.appendChild(this.btn);
+                console.log(this)
+            }
+            set width(w){
+                this.btn.style.width = w+'px';
+            }
+            set height(h){
+                this.btn.style.height = h+'px';
+            }
+        }
+
+        class Action extends Button{
+            onClick(clr){
+                this.btn.onclick = ()=> this.btn.style.background = clr;
+            }
+        }
+
+        const btn1 = new Button('click');
+        btn1.width = '100';
+        btn1.height = '200';
+        const btn2 = new Button('send');
+        btn2.width = '200';
+        btn2.btn.style.color = 'red';
+
+        const btn3 = new Action('click2');
+        btn3.onClick('green');
+
+    </script>
+</body>
+</html>
