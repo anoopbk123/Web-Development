@@ -1,0 +1,36 @@
+h3.simple{
+    color: red;
+}
+
+p.combinator span{
+    color: green;
+}
+
+p.combinator>small{
+    color: rgb(128, 0, 0);
+} 
+p.combinator>small~span{
+    color: rgb(9, 0, 128);
+}
+span#adj+span{
+    color:rgb(226, 43, 43);
+}
+
+h3.pseudoClass:hover{
+    color: red;
+}
+
+.pseudoElement::first-letter{
+    color: blue;
+}
+p.pseudoElement::after{
+    content:url(./online_book_store\output.png)
+}
+p.pseudoElement::selection{
+    background-color: yellow;
+    color:blue;
+}
+
+h3[class="attribute"]{
+    color: brown;
+}

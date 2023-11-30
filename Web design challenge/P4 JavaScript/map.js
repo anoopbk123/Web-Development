@@ -11,7 +11,7 @@ map.set('four', 4);
 //size
 console.log(map);
 console.log(map.size);
-//delte
+//delete
 map.delete('one');
 console.log(map);
 //has

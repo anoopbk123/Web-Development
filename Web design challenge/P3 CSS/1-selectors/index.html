@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CSS Selectors</title>
+</head>
+<body>
+    * selects all elements <br>
+    h1, h2, p, span{}
+    <h3 class="simple">
+        1) Simple selectors
+    </h3>
+        <span class="simple">id, class, tag name</span>
+    <h3 class="combinator">2)combinator</h3>
+    <p class="combinator">
+        <span>Desendent space</span><br>
+        <small>child&gt;</small><br>
+        <span id="adj">~ select all next siblings</span><br>
+        <span>+adjusent sibling</span>
+    </p>
+    <h3 class="pseudoClass">3)pseudoClass</h3>
+    <p>select different state</p>
+    <h3 class="pseudoElement">4)pseudoElement</h3>
+    <p class="pseudoElement">select a part of element</p>
+    <h3 class="attribute">5)attribute</h3>
+    <p>[attribute~=abc] having a word abc in attribute value<br>
+    ^start with<br>
+    $endwith <br>
+    *contain <br>
+    | after - <br>
+    </p>
+
+    
+</body>
+</html>

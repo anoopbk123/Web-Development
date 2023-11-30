@@ -1,0 +1,81 @@
+div#a{
+    height: 500px;
+    background-image: url("image.png");
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: right top; 
+}
+
+#b{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: brown;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: blueviolet;
+    border-top-style:groove;
+    border-bottom-color:aqua;
+}
+
+#c{
+    border-style: solid;
+    border-color:red;
+    border-width:5px 10px;
+}
+
+#d{
+    border-style: solid dotted dashed double;
+    border-color: blue red green yellow ;
+    border-width: 2px 5px 8px 11px;
+}
+
+#e{ 
+    margin: 20% 10%;
+    border: 10px ridge red;
+    border-radius: 2px 5px 10px 20px;
+}
+
+#f{
+    border: 2px solid ;
+    margin: 10%;
+    color:red;
+}
+#g{
+    border: inherit;
+    margin: inherit;
+}
+#h{
+    border:2px solid;
+    width:20%;
+    padding:20%;
+}
+#i{
+    border:2px solid;
+    width:20%;
+    padding:20%;
+    box-sizing:border-box;
+}
+#j{
+    border:2px solid;
+    outline:5px solid green;
+}
+#j h3{
+    border:2px solid;
+    outline:5px solid yellowgreen;
+    outline-offset: 5px;
+}
+#k h3{
+    margin:2%;
+    text-decoration:3px underline red;
+}
+#k p{
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 3;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
+#k span{
+    text-shadow: 2px 2px 5px red;
+}
