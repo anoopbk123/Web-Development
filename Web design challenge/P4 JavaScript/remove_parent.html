@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Parent</title>
+</head>
+<body>
+    <script>
+        const div1 = document.createElement("div");
+        div1.class="container";
+        div1.style.width="300px";
+        div1.innerHTML="this is div container";
+        div1.style.border="2px solid"
+        div1.onmouseover= (event) => {
+            const btn1 = document.createElement("button");
+            btn1.innerHTML="X";
+            btn1.onclick= (event)=>{
+                event.target.parentNode.remove();
+            }
+            div1.appendChild(btn1);
+            event.target.style.color="red";
+            setTimeout(()=>{
+                event.target.style.color="black";
+                div1.removeChild(btn1);
+
+            }, 1000)
+        }
+        document.body.appendChild(div1);
+    </script>
+</body>
+</html>

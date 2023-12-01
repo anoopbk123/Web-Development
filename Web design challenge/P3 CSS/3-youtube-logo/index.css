@@ -1,0 +1,44 @@
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the body takes the full height of the viewport */
+}
+
+.container{
+    background-color: red;
+    width: 130px;
+    height: 70px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0% 1%;
+    gap:3px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+
+#item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    
+    
+}
+#item2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:red;
+    background-color: white;
+    border-radius: inherit;
+    width:80px;
+    padding: 2%;
+    
+}
+
