@@ -36,3 +36,7 @@ function o(){
     console.log(one, two, three, one2, two2, three2)
 }
 o();
+
+//by using destructuring we can declare and assign many variables at a time
+const [x, y, z] = ["x", "y", "z"];
+console.log(x, y, z);

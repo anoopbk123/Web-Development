@@ -34,3 +34,18 @@ p.pseudoElement::selection{
 h3[class="attribute"]{
     color: brown;
 }
+
+/* here priority goes to the style with the important */
+.important{
+    color: green!important;
+}
+
+.important{
+    color: red;
+}
+#imp{
+    color:yellow;
+}
+#hh{
+    background-color: #333333;
+}

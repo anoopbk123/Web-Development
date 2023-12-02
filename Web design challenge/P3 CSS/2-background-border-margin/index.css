@@ -68,6 +68,8 @@ div#a{
 #k h3{
     margin:2%;
     text-decoration:3px underline dotted red;
+    outline: 8px dotted green;
+    outline-offset: 4px;
 }
 #k p{
     text-align: justify;
