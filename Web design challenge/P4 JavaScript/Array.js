@@ -21,3 +21,4 @@ console.log(froots.toString())
 froots[7] = 'abc'
 console.log(froots);
 console.log(Array.isArray(froots));
+console.log(Array(1, 2, 3, 4));

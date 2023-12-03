@@ -13,3 +13,5 @@ numbers.sort();
 console.log(numbers);
 numbers.sort((a, b)=> a-b);//if a-b is -ve first a is sorted if positive then b;
 console.log(numbers);
+//sorted method //works only in updated versions
+const sorted = [100, 1, 30, 55, 80].toSorted((a, b) => a-b);

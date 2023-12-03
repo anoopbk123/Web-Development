@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>units</title>
+</head>
+<body>
+    <h3>best options</h3>
+    use * remove all the default style givent to the page. like padding, margin...<br>
+    use absolute units for borders<br>
+    rem for the font size <br>
+    em for the padding because it is related to the font-size of the element<br>
+    align-item: center will work only if the height is specified<br>
+    <p style="border:2px solid;"><strong>type lorem and enter to get some sample text </strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sequi temporibus delectus pariatur earum provident eos sit voluptates, mollitia aut minus odio doloremque consectetur ratione necessitatibus. Ullam numquam porro modi.</p>
+    <ul id="absolute">
+        <h3>Absolute lengths</h3>
+        <li>Centi meter (0.5cm)</li>
+        <li>Millimeter (5mm)</li>
+        <li>inches (0.2in)</li>
+        <li>Pixel (10px)</li>
+        <li>points(10pt)</li>
+        <li>picas(pc)</li>
+    </ul>
+    <ul id="relative">
+        <h3>Relative lengths</h3>
+        <li>em(emphosize)-relative to the font size of the element(border:2em solid)</li>
+        <li>ex-relative to the current x height of the current font</li>
+        <li>ch- relative to the width of 0 of the choosen font size(border:2ch solid; 2*width of the 0 in the choosen font size)</li>
+        <li>rem- root em. relative to the font size of the root element(font-size: 1rem;)</li>
+        <li>vw- related to the viewport width(font-size: 3vw;)</li>
+        <li>vh- related to the viewport height(font-size: 3vh;)</li>
+        <li>vmin</li>
+        <li>vmax</li>
+        <li>%- relative to the parent element(margin: 6%;)</li>
+    </ul>
+    <h1 style="width:80%; border:2px dotted">hh</h1>
+    <header style="width:80%; border:2px dotted">
+        <h1 style="width:80%; border:2px dotted">hh</h1>
+    </header>
+</body>
+</html>

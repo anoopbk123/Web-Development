@@ -1,0 +1,33 @@
+ul#absolute li:nth-child(2){
+    font-size: 0.5cm;
+}
+ul#absolute li:nth-child(3){
+    font-size: 5mm;
+}
+ul#absolute li:nth-child(4){
+    font-size: 0.2in;
+}
+ul#absolute li:nth-child(5){
+    font-size: 10px;
+}
+ul#absolute li:nth-child(6){
+    font-size: 10pt;
+}
+ul#relative li:nth-child(2){
+    border:2em solid;
+}
+ul#relative li:nth-child(4){
+    border:2ch solid;
+}
+ul#relative li:nth-child(5){
+    font-size: 1rem;
+}
+ul#relative li:nth-child(6){
+    font-size: 3vw;
+}
+ul#relative li:nth-child(7){
+    font-size: 3vh;
+}
+ul#relative li:nth-child(10){
+    margin: 6%;
+}
