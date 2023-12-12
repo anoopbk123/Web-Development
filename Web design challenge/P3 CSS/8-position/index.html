@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inside">
+            <div class="item static">static:static is the default position</div>
+            <div class="item fixed">fixed</div>
+            <div class="item stiky">stiky</div>
+            <div class="item absolute">absolute: </div>
+            <div class="item relative">relative</div>
+        </div>
+    </div>
+    absolute: if relative parent is not given root is considered as relative
+    relative: parent is considered as relative<br>
+    relative parent is affected to the absolute<br>
+    even if there is a relative parent if fixed bottom:0; will be bottom of root and sticky will be related to its parent not to the relative parent
+</body>
+</html>

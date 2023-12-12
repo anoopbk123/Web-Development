@@ -1,0 +1,22 @@
+.columns{
+    /* columns: 4; */
+    column-count: 4;
+    column-gap: 3rem;
+    column-rule: 5px solid;
+    column-width: 200px;
+}
+.columns p{
+    margin-top: 0;
+}
+.columns h1{
+    background-color: black;
+    color: aliceblue;
+    padding: 1em;
+    break-inside: avoid;
+    break-before: column;
+}
+h2{
+    column-span: all;
+    text-align: center;
+    white-space:nowrap; /* to avoid wraping */
+}

@@ -1,0 +1,28 @@
+.block{
+    width: 30vw;
+    height: 30vh;
+    background-color: #000;
+    color: whitesmoke;
+    padding: 1rem;
+
+}
+.float{
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.right{
+    float: inline-end;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+section{
+    background-color: bisque;
+    width: 100%;
+    padding: 1rem;
+    /* overflow: auto; */
+    display: flow-root;
+}
+.clear{
+    clear: both;
+}

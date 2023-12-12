@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Bar</title>
     <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+        body{
+            height: 200vh;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width:100%
+        }
         ul{
             list-style-type: none;
             background-color: rgb(95, 22, 103);
@@ -24,15 +36,18 @@
         a:hover{
             background-color: brown;
         }
+        li:last-child a{
+            border: 0;
+        }
     </style>
 </head>
 <body>
    <nav>
     <ul>
-        <li><a href="gppgle.com">Home</a></li>
-        <li><a href="gppgle.com">News</a></li>
-        <li><a href="gppgle.com">contact</a></li>
-        <li><a href="gppgle.com">About</a></li>
+        <li><a href="#gppgle.com">Home</a></li>
+        <li><a href="#gppgle.com">News</a></li>
+        <li><a href="#gppgle.com">contact</a></li>
+        <li><a href="#gppgle.com">About</a></li>
     </ul>
    </nav> 
     

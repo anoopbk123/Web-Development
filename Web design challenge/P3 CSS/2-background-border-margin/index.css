@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 div#a{
     height: 500px;
     background-image: url("image.png");
@@ -81,4 +82,77 @@ div#a{
 #k span{
     text-shadow: 2px 2px 5px red;
     text-transform: uppercase;
+}
+.circle{
+    margin: 3rem auto;
+    background-color: gold;
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+}
+.circle:hover{
+    background-color: green;
+    border-radius: 50px;
+}
+.circle2{
+    margin:3rem auto;
+    width:3rem;
+    height: 3rem;
+    border:2px solid;
+    background-color: red;
+    border-radius: 1.5rem;
+}
+.circle2:hover{
+    background-color: blue;
+    border-radius: 0;
+}
+.google-font{
+    font-family:'Rubik Bubbles';
+    text-align: justify;
+}
+div.google-font ::selection{
+    background-color: green;
+    color: rgb(255, 0, 0);
+}
+
+a[href="#home"]{
+    color: green;
+    cursor: progress;
+}
+
+a[href="#about"]{
+    color: green;
+    cursor: pointer;
+}
+a[href="#contact"]{
+    color: green;
+    cursor:crosshair;
+}
+a:hover, a:focus{
+    color:yellow;
+}
+ul{
+    list-style-type:circle;
+}
+ul li{
+    float: left;
+    margin:2em;
+}
+ol#img{
+    text-align: center;
+    list-style-image: url("tick.png");
+    list-style-position: inside;
+}
+ol[type="A"]{
+    color:red;
+}
+ol[type="A"] ::marker{
+    color: rgb(108, 165, 42);
+}
+p.content::after{
+    content: "content inserted using psuedo element";
+}
+ol.content ::marker{
+    content:"bla. ";
+    font-weight:bold;
 }

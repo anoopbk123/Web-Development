@@ -31,3 +31,11 @@ ul#relative li:nth-child(7){
 ul#relative li:nth-child(10){
     margin: 6%;
 }
+#BoxModel{
+    margin:2%;
+    outline: 3px solid green;
+    border: 3px solid;
+    padding: 2em;
+    font-size: 2rem;
+    width:10ch;
+}

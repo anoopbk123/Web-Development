@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-color-scheme="light">
+    <header>
+        <h1>Headding</h1>
+        <span id="modeIcon" style="position: absolute;left:0" onclick="darkMode()">&#127773;</span>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown"><a href="#dropdown">Dropdown</a>
+                <div class="dropdown-content">
+                    <a href="#link1">Link1</a>
+                    <a href="#link2">Link2</a>
+                    <a href="#link3">Link3</a>
+                </div>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <section id="home"><h2>Home</h2>This is section one</section>
+        <section id="about"><h2>About</h2>This is section two</section>
+        <section id="contact"><h2>Contact</h2>This is section three</section>
+    </main>
+
+    <script>
+        function darkMode() {
+            let currentColorScheme = document.body.getAttribute('data-color-scheme');
+            let modeIcon = document.getElementById("modeIcon");
+            if (currentColorScheme === 'light') {
+                document.body.setAttribute('data-color-scheme', 'dark');
+                modeIcon.innerHTML = '&#127774;';
+            } else {
+                document.body.setAttribute('data-color-scheme', 'light');
+                modeIcon.innerHTML = '&#127773;' ;
+            }
+        }
+        
+    </script>
+</body>
+</html>

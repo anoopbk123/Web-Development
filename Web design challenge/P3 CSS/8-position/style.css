@@ -1,0 +1,45 @@
+body{
+    min-height: 200vh;
+}
+div{
+    border:2px solid;
+}
+.container{
+    width:80vw;
+    height: 80vh;
+    margin:auto;
+    position: relative;
+}
+.inside{
+    width:40%;
+    margin:10% auto; 
+    overflow: auto;   
+}
+.item{
+    margin: 2px;
+    color:aliceblue;
+    background-color: blue;
+    padding:2em;
+}
+/* .stiky, .fixed, .static, .absolute */
+
+.static{
+    position:static;
+}
+.absolute{
+    position:absolute;
+    bottom: 0%;
+    right:0%
+}
+.relative{
+    position: relative;
+    right:20%;
+}
+.fixed{
+    position:fixed;
+}
+.stiky{
+    z-index: 1;
+    position:sticky;
+    top:0;
+}

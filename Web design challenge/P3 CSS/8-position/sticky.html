@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:200vh;
+        }
+        .container{
+            width:50%;
+            height:20%;
+            border: 2px solid;
+        }
+        .sticky{
+            margin:auto;
+            width:20%;
+            height:20%;
+            border: 2px solid;
+            position:sticky;
+            top:0px;
+        }
+        .sticky2{
+            margin:auto;
+            margin-top: 20px;
+            width:20%;
+            height:50px;
+            border: 2px solid;
+            position:sticky;
+            top:0px;
+        }
+        .fixed{
+            border: 2px solid;
+            width:20%;
+            position: fixed;
+            bottom: 0;
+        }
+        .two{
+            top:70px
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky2">sticky</div>
+    <div class="sticky2 two">sticky</div>
+    <div class="container">
+        <div class="sticky">sticky</div>
+        <div class="fixed">fixed</div>
+    </div>
+</body>
+</html>

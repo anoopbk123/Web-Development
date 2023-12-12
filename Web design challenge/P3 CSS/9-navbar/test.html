@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light{
+            background-color: white;
+            color: black;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="light">
+    <button onclick="changeMode()">mode</button>adasd
+    <script>
+        function changeMode(){
+            if(document.body.className === 'light'){
+                document.body.className = 'dark'
+            }
+            else{
+                document.body.className = 'light'
+            }
+        }
+    </script>
+</body>
+</html>

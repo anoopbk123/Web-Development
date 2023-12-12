@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 300vh;
+      }
+      .container {
+        height: 100vh;
+        border: 2px solid;
+        margin-top: 10%;
+      }
+      .two {
+      }
+      .item {
+        height: 10%;
+        background-color: bisque;
+        border: inherit;
+      }
+      .relative {
+        position: relative;
+        bottom: 75px;
+      }
+      .inline-relative {
+        position: relative;
+        left: 80px;
+        top: 30px;
+      }
+      .inline-absolute {
+        position: absolute;
+        top: 0;
+        display: block;
+      }
+      .absolute {
+        position: absolute;
+        bottom: 0;
+      }
+      .fixed {
+        position: fixed;
+        bottom: 30px;
+        /*z-index: 1;*/
+      }
+      .sticky {
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="container two">
+      <span class="item" style="height: 10%">Lorem</span> ipsum dolor, lo sit
+      amet consectetur
+      <span class="item inline-relative">inline relative</span> adipisicing
+      elit. Animi, quia. Sapiente et sit, sint recusandae rem facere at corporis
+      nemo consectetur, officia veniam quod temporibus possimus quos delectus.
+      Repudiandae, facere? Lorem ipsum dolor, sit amet consectetur adipisicing
+      elit. Consequatur saepe ipsa possimus nulla ipsum, deserunt veniam aliquid
+      eius vel deleniti dicta nisi. Dolorum incidunt nesciunt ducimus ipsam
+      quidem porro fugiat.
+      <div class="item relative">
+        <b>relative</b>: it moves from its original place as we give value to
+        top, rigth...It is now bottom:75px; from its original position. It
+        follows the document flow. if it is moved there will be a gap at its
+        original position
+      </div>
+      Lorem <span class="item inline-absolute">inline-absolute</span>ipsum dolor
+      sit amet consectetur, adipisicing elit. Sunt voluptatibus nobis molestias
+      consequatur facere <span style="position:sticky; bottom: 20px; background-color: bisque;">inline sticky</span> pariatur id cupiditate voluptatum perferendis iusto. Ea
+      repudiandae facilis vero atque natus, dolorem sapiente quos nam.
+      <div class="item absolute">
+        <b>absolute:</b>the absolute don't follow the normal document flow. so
+        there is no gap in the normal position.even if it is a block level
+        element it is not conidered<br />
+        even if the position of absolute is not changed the area near absolute
+        will move to its behind<br />
+        any parent with position other than static is considered for
+        positioning<br />
+        if no position parent is not precent it will consider the body to scroll
+        as parent. its top 0 will be top of body and bottom 0 will be bottom of
+        body without scolling.
+      </div>
+      <div class="item fixed">
+        <b>fixed:</b>positioned relative to the view port.it will be fixed to
+        the view port<br />
+        it is out of normal document flow so there will be no gap at its normal
+        position and no block or inline is considerd
+      </div>
+      <div class="item sticky"><b>sticky:</b> It toggles between fixed and relative.</div>
+    </div>
+    <span style="position: absolute; background-color: blue">absolute:</span>
+    ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa ab fugit
+    vel labore ut deserunt assumenda dolorem vitae magni. Repellat mollitia
+    modi, labore quam voluptate accusamus nam nihil eligendi.
+    <div class="container"></div>
+  </body>
+</html>

@@ -40,3 +40,9 @@ o();
 //by using destructuring we can declare and assign many variables at a time
 const [x, y, z] = ["x", "y", "z"];
 console.log(x, y, z);
+
+//variable swap using destructuring;
+let x1 = 0;
+let y1 = 2;
+[y1, x1] = [x1, y1];
+console.log(x1, y1);
