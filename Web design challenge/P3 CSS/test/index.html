@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #line{
+            color:blue;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <span onclick="fun(this)" id="line">Heloooo</span>
+    <script>
+        function fun(e){
+            console.log(window.getComputedStyle(e).textDecoration)
+            if(window.getComputedStyle(e).color === 'rgb(0, 0, 255)'){
+                e.style.color = 'red';
+                e.style.textDecoration = 'none'
+            }
+            else{
+                e.style.color = 'blue';
+                e.style.textDecoration = 'line-through';
+            }
+        }
+    </script>
+</body>
+</html>
