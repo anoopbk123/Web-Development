@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-direction:row-reverse; */
+  /* flex-wrap: wrap-reverse; */
+  flex-flow:row wrap;
+  align-content: space-evenly;
+}
+.item {
+  /* min-width: 100px; */
+  flex-basis: 100px;
+  min-height: 100px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -15,5 +15,11 @@ arr3.push(55)
 console.log(arr3, arr);
 console.log(arr3 == arr);//they are different arrays
 //the spread operator will not copy the object inside the object it copies the reference for inner object
+//So if we change a value assigned using spread operator if there is a inner object or array it will also change the original value
+const x1 = [1, 2, 3, [4, 5, 6]]
+const x2 = [...x1]
+x2[3][1] = 7;
+console.log(x1,' , ', x2);
 
 console.log(Math.max(...arr));
+console.log(Math.max.apply(null, arr))

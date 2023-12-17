@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert{
+            display: none;
+            background-color: aqua;
+            color: rgb(43, 3, 3);
+            text-align: center;
+        }
+        .two{
+            display: none;
+            background-color: aqua;
+            color: rgb(43, 3, 3);
+            text-align: center;
+            position: fixed;
+            top:50%;
+            left:20%;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    click button to view alert box<br>
+    <button onclick="viewAlert()">click</button>
+    <dialog open class="alert">alert message<br>
+        <button onclick="handleOk()">Ok</button>
+    </dialog>
+    <br>enter ok to close alert box
+    <br><button onclick="alertTwo()">alert two</button>
+    <div open class="two">alert message<br>
+        <button onclick="alertTwoOk()">Ok</button>
+    </div>
+    <script>
+        const alert = document.getElementsByClassName('alert')[0];
+        function viewAlert(){
+            alert.style.display = 'block';
+        }
+        function handleOk(){
+            alert.style.display = 'none';
+        }
+
+        const alert2 = document.getElementsByClassName('two')[0];
+        function alertTwo(){
+            alert2.style.display = 'block';
+        }
+        function alertTwoOk(){
+            alert2.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

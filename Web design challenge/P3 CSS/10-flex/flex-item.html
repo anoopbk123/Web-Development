@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: bisque;
+        height: 400px;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+      p {
+        background-color: black;
+        width: 10%;
+        height: 10%;
+        color: aliceblue;
+       /* flex-basis: 100px;
+        flex-grow: 1;*/
+        flex:1 1 100px
+      }
+      p:first-child{
+        align-self: flex-end;
+        flex-grow: 3;
+      }
+      p:nth-child(2){
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div>
+
+  </body>
+</html>

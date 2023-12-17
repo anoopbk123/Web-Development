@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: bisque;
+        height: 400px;
+        display: flex;
+        gap: 5px;
+        /*justify-content: center;*/
+      }
+      p {
+        background-color: black;
+        width: 10%;
+        height: 10%;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p style="order:5">1</p>
+      <p style="order:6">2</p>
+      <p style="order:4">3</p>
+      <p style="order:">4</p>
+    </div>
+    order by default is zero<br>
+    items are arranged acending order<br>
+    which have highest order will become last and lowest become first
+
+  </body>
+</html>

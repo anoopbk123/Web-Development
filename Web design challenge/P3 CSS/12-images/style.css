@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background-image: linear-gradient(rgb(125, 180, 70), #fff);
+}
+h1 {
+    text-transform: uppercase;
+    background-image: url('banner-image.jpg');
+    -webkit-background-clip: text;
+    color:hsla(0, 0%, 0%, 0.196);
+    font-size: 18rem;
+}
+img{
+    border-radius: 50%;
+}
