@@ -1,0 +1,35 @@
+:root{
+    --bgcolor:black;
+    --text-color:white;
+}
+body{
+    background-color: var(--bgcolor);
+    color:var(--text-color)
+}
+#box{
+    background-color: brown;
+    height: 35px;
+    width:20%;
+    margin:auto;
+    box-shadow: 10px 10px 5px rgb(207, 173, 230);
+}
+
+/* tooltip */
+.tooltip{
+    position: relative;
+}
+.tooltip:hover{
+    filter:brightness(50%)
+}
+.tooltip:hover::before{
+    content:attr(data-tooltip);
+    position: absolute;
+    bottom:20px;
+    white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bgcolor:darkblue;
+    }
+}

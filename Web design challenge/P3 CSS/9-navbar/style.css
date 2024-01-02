@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-margin: -5rem;
 }
 body[data-color-scheme = "dark"]{
     background-color: #333;

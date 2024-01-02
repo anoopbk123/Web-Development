@@ -40,6 +40,10 @@ figure{
     margin: 0.5rem;
     overflow-wrap: break-word;
     min-width: 170px;
+    transition: transform 0.5s;
+}
+figure:hover{
+    transform: scale(1.1, 1.1);
 }
 
 img{

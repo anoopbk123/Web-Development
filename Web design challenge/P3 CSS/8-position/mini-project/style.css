@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-margin: 2rem;
 }
 h1{
     background-color: #C3C029;

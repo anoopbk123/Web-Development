@@ -1,0 +1,60 @@
+div{
+    width: 100px;
+    background-color: brown;
+    margin:10px;
+    height: 20px;
+}
+
+/* translate */
+
+#translate:active{
+    transform: translate(30px, 80px);
+}
+#rotate:active{
+    transform:rotate(120deg) ;
+}
+#scale:active{
+    transform:scale(1.5, 1.5) ;
+}
+#skew:active{
+    transform:skew(120deg) ;
+}
+#matrix:active{
+    transform:matrix(1, -0.3, 0, 1, 0, 0) ;
+}
+
+/* transition */
+
+.transition{
+    transition:height 2s, width 2s;
+}
+.transition:active{
+    width: calc(100px + 100px);
+    height: calc(100px + 100px);
+}
+#timing-function{
+    transition-timing-function: ease ;
+}
+#delay{
+    transition-delay: 1s;
+}
+
+#transition-transform{
+    transition: transform 1s;
+    transition-delay: 0.05s;
+}
+#transition-transform:hover{
+    transform: scale(1.2, 1.2);
+    transition-timing-function: ease;
+}
+#paste-icon{
+    display: inline-block;
+    font-size: 2rem;
+    transition: transform 2s;
+    /* transition-delay: -0.5s; */
+}
+#paste-icon:active{
+    transform: scale(2, 2);
+    /* font-weight: bolder; */
+    transition-timing-function: ease;
+}

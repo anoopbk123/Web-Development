@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Animation</title>
+    <style>
+        #container{
+            width:500px;
+            height:500px;
+            background-color: cadetblue;
+            position: relative;
+        }
+        #item{
+            width:50px;
+            height:50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="startAnimate()">click</button>
+    <div id="container">
+        <div id="item">hello
+        </div>
+    </div>
+
+    <script>
+        function startAnimate(){
+            let position = 0;
+            let item = document.getElementById("item");
+            let interval = null;
+            clearInterval(interval);
+            interval = setInterval(frame, 10)
+            console.log(interval);
+            function frame(){
+                if(position === 450){
+                    clearInterval(interval);
+                }
+                else{
+                    position++;
+                    item.style.top = position+'px';
+                    item.style.left = `${position}px`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
