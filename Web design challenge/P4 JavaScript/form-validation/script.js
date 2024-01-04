@@ -22,6 +22,9 @@ function validateForm(event){
     let address = signUpForm['address'].value;
     let genderList = signUpForm['gender']
     let gender;
+    let langugeList = signUpForm['languages'];
+    let languages = [];
+    let qualification = signUpForm['qualification'].value;
     //name validation
     if(userName.length < 3 ||/[^\w]/.test(userName) || /\d/.test(userName)){
         setError("name-error", 'name must have atleast three chars and must not contain digits')
@@ -62,7 +65,21 @@ function validateForm(event){
         setError("gender-error", 'this field is required');
         submitForm = false;
     }
-    
+    //languages
+    for(let language of langugeList){
+        if(language.checked){
+            languages.push(language.value);
+        }
+    }
+    if(!languages.length){
+        setError('languages-error', 'select at least one');
+        submitForm = false;
+    }
+    //qualification
+    if(qualification === ''){
+        setError('qualification-error', 'select qualification');
+        submitForm = false;
+    }
 
     
     if(submitForm){
@@ -72,7 +89,10 @@ function validateForm(event){
         password:password,
         confirmPassword:confirmPassword,
         phoneNumber:phoneNumber,
-        address:address
+        gender:gender,
+        languages:languages,
+        address:address,
+        qualification:qualification
     })
 
 

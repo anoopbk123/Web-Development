@@ -54,11 +54,35 @@
             <textarea name="address" class="form-control" placeholder="Leave a comment here" id="address"></textarea>
             <label for="address">Address</label>
           </div>
-
+          <div class="d-flex">
+            Known Languages:
+            <div class="mx-2 mb-3 form-check">
+              <input type="checkbox" name="languages" class="form-check-input" id="English" value="English">
+              <label class="form-check-label" for="English">English</label>
+            </div>
+            <div class="mx-2 mb-3 form-check">
+              <input type="checkbox" name="languages" class="form-check-input" id="Hindi" value="Hindi">
+              <label class="form-check-label" for="Hindi">Hindi</label>
+            </div>
+            <div class="mx-2 mb-3 form-check">
+              <input type="checkbox" name="languages" class="form-check-input" id="Malayalam" value="Malayalam">
+              <label class="form-check-label" for="Malayalam">Malayalam</label>
+            </div>
+            <span id="languages-error" class="form-error"></span>
+          </div>
+          <div class="mx-2 mb-3">
+            Qulification:
+            <select name="qualification" id="qualification">
+              <option value="">Select highest qulification</option>
+              <option value="10nth">10nth</option>
+              <option value="+2">+2</option>
+              <option value="UG/higher">UG/higher</option>
+            </select>
+            <span id="qualification-error" class="form-error"></span>
+          </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-      <a href="result.html">result</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
