@@ -1,0 +1,79 @@
+html{
+    color-scheme: dark light;
+}
+body{
+    min-height: 100vh;
+}
+h1{
+    width:0;
+    position: relative;
+    text-align: left;
+    text-decoration: underline 5px green;
+    text-shadow: 0 0 5px rgb(0, 128, 11);
+    animation-name: colour;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.container{
+    position: relative;
+    width:500px;
+    height:500px;
+    background-color: rgb(114, 165, 42);
+    margin: auto;
+    outline: 5px solid greenyellow;
+    outline-offset: 0.5px;
+}
+.item{
+    width:50px;
+    height: 50px;
+    background-color: aliceblue;
+    position: absolute;
+    animation-name: position;
+    /* animation-delay: 1s; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: backwards; */
+}
+
+@keyframes colour{
+    from{
+        color:rgb(234, 0, 255);
+        left: -100px;
+    }
+    to{
+        color:rgb(0, 72, 255);
+        left:calc(50% - 2.25em);
+    }
+}
+
+@keyframes position{
+    0%{
+        top:0px;
+        left:0px;
+    }
+    25%{
+        top:0px;
+        left: 450px;
+        transform: rotate(90deg);
+    }
+    50%{
+        top: 450px;
+        left: 450px;
+        transform: rotate(180deg);
+    }
+    75%{
+        top: 450px;
+        left:0px;
+        transform: rotate(240deg);
+    }
+    100%{
+        top:0px;
+        left:0px;
+        transform: rotate(360deg);
+    }
+
+}
