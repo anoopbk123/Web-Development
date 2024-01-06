@@ -1,0 +1,1 @@
+This repository is dedicated to fun and information. It documents my journey in web development, showcasing the new techniques I learn in JavaScript, web development, and problem-solving with JavaScript. I aim to share my knowledge to help others in their learning journey as well.

@@ -58,3 +58,10 @@ div{
     /* font-weight: bolder; */
     transition-timing-function: ease;
 }
+.border{
+    height: 100px;
+    transition: all 0.5s;
+}
+.border:hover{
+    border-radius: 50%;
+}
