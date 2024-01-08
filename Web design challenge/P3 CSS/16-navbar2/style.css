@@ -1,0 +1,107 @@
+:root{
+    --head-color:rgba(220, 195, 171, 0.749);
+    --head-bg-color:rgb(14, 14, 14);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 200vh;
+}
+
+/*mobile view*/
+@media screen and (min-width:100px) {
+    header{
+        position: fixed;
+        width: 100%;
+        top:0;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0.2rem;
+        color: var(--head-color);
+        background-color: var(--head-bg-color);
+    }
+    /* menu */
+    .menue-btn{
+        position: absolute;
+        top:3px;
+        right: 5px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+    #menu-check:checked+label{
+        border: 1px solid white;
+        border-radius: 15%;
+        transform:scale(1.2);
+    }
+    #menu-check{
+        display: none;
+    }
+    /* nav */
+    nav ul{
+        display: flex;
+        flex-flow: column nowrap;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        transition-timing-function: ease;
+        list-style: none;
+    }
+    nav a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: var(--head-color);
+        font-size: 1.2rem;
+        border-top: 1px solid;
+        transition: transform 0.5s;
+    }
+    nav a:hover{
+        transform:scale(1.2)
+    }
+    #menu-check:checked+label+nav ul{
+        max-height: 100px;
+    }
+    h2{
+        margin-top: 2.6rem;
+    }
+}
+
+/* desktop view */
+@media screen and (min-width:600px){
+    .menue-btn{
+        display: none;
+    }
+    header{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    h1{
+        flex:1;
+    }
+    nav{
+        flex:2;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    nav ul{
+        flex:1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+    nav ul li{
+        display: grid;
+        place-content: center;
+    }
+    nav ul li a{
+        border: none;
+    }
+}

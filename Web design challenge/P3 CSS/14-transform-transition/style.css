@@ -22,7 +22,18 @@ div{
 #matrix:active{
     transform:matrix(1, -0.3, 0, 1, 0, 0) ;
 }
-
+#rotateY{
+    transition: transform 1s;
+}
+#rotateY:hover{
+    transform: rotateY(90deg);
+}
+#rotateX{
+    transition: transform 1s;
+}
+#rotateX:hover{
+    transform: rotateX(180deg);
+}
 /* transition */
 
 .transition{
