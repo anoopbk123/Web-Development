@@ -4,7 +4,7 @@ console.log('indexOf\t'+froots.indexOf('Orrange'));
 console.log('indexOf\t'+froots.indexOf('o'));//case sensitive if not found return -1;
 console.log('\nIndexOf\t'+froots.indexOf('Orrange',16));
 
-//lastIndexOf.return first index. case sensitive if not found return -1. second parameter(exclusive) is used for ending position of search;
+//lastIndexOf.return last index. case sensitive if not found return -1. second parameter(exclusive) is used for ending position of search;
 console.log('\nlastIndexOf\t'+froots.lastIndexOf('Orrange'));
 console.log('\nlastIndexOf\t'+froots.lastIndexOf('Orrange',23));
 

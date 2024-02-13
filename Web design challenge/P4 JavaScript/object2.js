@@ -9,6 +9,7 @@ const car={
 console.log(car)
 console.log('car name\t'+car.name)
 console.log('price\t'+car['price'])
+console.log('price\t'+car.price)
 
 const name={
     first_name:'abu',

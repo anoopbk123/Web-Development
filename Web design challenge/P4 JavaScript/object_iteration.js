@@ -9,3 +9,4 @@ const car={
 for (let key in car){
     console.log(`${key}\t${car[key]}`);
 }
+console.log(car['name'])

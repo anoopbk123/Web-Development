@@ -3,9 +3,9 @@
     --head-bg-color:rgb(14, 14, 14);
 }
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     min-height: 200vh;
@@ -14,29 +14,31 @@ body{
 /*mobile view*/
 @media screen and (min-width:100px) {
     header{
-        position: fixed;
-        width: 100%;
-        top:0;
+        background-color: var(--head-bg-color);
+        color: var(--head-color);
         display: flex;
         flex-flow: column nowrap;
         padding: 0.2rem;
-        color: var(--head-color);
-        background-color: var(--head-bg-color);
+        position: fixed;
+        top:0;
+        width: 100%;
     }
     /* menu */
     .menue-btn{
-        position: absolute;
-        top:3px;
-        right: 5px;
+        cursor: pointer;
         font-size: 1.5rem;
         font-weight: bold;
-        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top:3px;
         transition: transform 0.5s;
     }
     #menu-check:checked+label{
-        border: 1px solid white;
         border-radius: 15%;
-        transform:scale(1.2);
+        border: 1px solid white;
+        outline: 2px solid white;
+        padding: 0;
+        transform:scale(1.1);
     }
     #menu-check{
         display: none;
@@ -45,19 +47,19 @@ body{
     nav ul{
         display: flex;
         flex-flow: column nowrap;
+        list-style: none;
         max-height: 0px;
         overflow: hidden;
-        transition: max-height 0.5s;
         transition-timing-function: ease;
-        list-style: none;
+        transition: max-height 0.5s;
     }
     nav a{
+        border-top: 1px solid;
+        color: var(--head-color);
         display: block;
+        font-size: 1.2rem;
         text-align: center;
         text-decoration: none;
-        color: var(--head-color);
-        font-size: 1.2rem;
-        border-top: 1px solid;
         transition: transform 0.5s;
     }
     nav a:hover{
@@ -86,15 +88,13 @@ body{
     nav{
         flex:2;
         display: flex;
-        /* justify-content: space-between; */
     }
     nav ul{
-        flex:1;
         display: flex;
         flex-flow: row nowrap;
+        flex:1;
         justify-content: space-evenly;
         max-height: 100%;
-        height: 100%;
         width: 100%;
     }
     nav ul li{

@@ -31,3 +31,4 @@ console.log(typeof s)
 class A{}
 let a1=new A()
 console.log(typeof a1)
+console.log(2e2)
