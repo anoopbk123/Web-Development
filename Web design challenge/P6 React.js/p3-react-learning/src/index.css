@@ -1,0 +1,35 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  /* font-size: 18px; */
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* variables */
+  --fs-xl: clamp(32px, 8vw + 2rem, 48px);
+  --fs-l: clamp(24px, 6vw + 1rem, 36px);
+  --fs-md: clamp(16px, 4vw + 0.75rem, 24px);
+  --fs-sm: clamp(14px, 3vw + 0.5rem, 18px);
+  --fs-regular: clamp(16px, 4vw + 1rem, 22px);
+
+}
+body {
+  /* min-width: 100vh; */
+  min-height: 100vh;
+  font-size: var(--fs-sm);
+}
+h1{
+  font-size: var(--fs-l);
+}
+h2{
+  font-size: var(--fs-md);
+}
+
+/* @media screen and (min-width:500px) {
+  :root{
+    font-size: 20px;
+  }
+} */
+
+

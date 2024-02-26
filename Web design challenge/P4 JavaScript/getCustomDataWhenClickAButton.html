@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-key="123" name="abcd" value='sdfasdf' id="btn">click</button>
+    <script>
+        btn.onclick=myfun
+
+        function myfun(event){
+            console.log(event.target.getAttribute('data-key'))
+        }
+    </script>
+</body>
+</html>

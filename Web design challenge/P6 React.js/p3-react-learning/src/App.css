@@ -1,0 +1,82 @@
+/* #root {
+  min-width: 100vw;
+  min-height: 100vh;
+} */
+/*|| Reset */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*|| Reusable classes */
+.fs-sm{
+  font-size: var(--fs-sm);
+}
+.fs-md{
+  font-size: var(--fs-md);
+}
+.fs-l{
+  font-size: var(--fs-l);
+}
+.fs-xl{
+  font-size: var(--fs-xl);
+}
+.text-center{
+  text-align: center;
+}
+.m-1{
+  margin: 1em;
+}
+.m-auto{
+  margin: auto;
+}
+.p-1{
+  padding: 1em;
+}
+.d-flex{
+  display: flex;
+}
+.gap-1{
+  gap: 2em;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.text-1{
+  font-size: 1em;
+}
+.border-rounded{
+  border-radius: 20px;
+}
+.max-100{
+  max-width: 100%;
+}
+
+/* Reusable element classes */
+
+.btn-primary{
+  background-color: blue;
+  color: aliceblue;
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 0.7em;
+  cursor:pointer;
+  border:1px solid rgb(2, 217, 255)
+}
+.input{
+  font-size: 0.9em;
+  border-radius: 0.7em;
+  padding: 0.5em;
+  border:0;
+  max-width: 100%;
+}
+.input:focus{
+  outline: 1px solid rgb(225, 2, 2);
+}
