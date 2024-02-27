@@ -34,7 +34,7 @@ var isAnagram = function (s, t) {
   if (s.length !== t.length) {
     return false;
   }
-  // maping each char in s with value as its count in s
+  // mapping each char in s with value as its count in s
   const charCount = {};
   for (let char of s) {
     charCount[char] = (charCount[char] || 0) + 1;
