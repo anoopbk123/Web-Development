@@ -1,0 +1,14 @@
+.todo-input{
+    border: 1px solid;
+    width: 50vw;
+}
+.todo-list-container{
+    width:80vw;
+    margin-top: 2rem;
+}
+/* .todo-item{
+    background-color: crimson;
+} */
+.todo{
+    flex-grow: 2;
+}

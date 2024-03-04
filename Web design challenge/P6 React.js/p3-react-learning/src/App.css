@@ -43,6 +43,9 @@
 .justify-between{
   justify-content: space-between;
 }
+.justify-evenly{
+  justify-content: space-evenly;
+}
 .flex-grow-1{
   flex-grow: 1;
 }
@@ -70,6 +73,14 @@
   cursor:pointer;
   border:1px solid rgb(2, 217, 255)
 }
+
+.warning{
+  background-color: chocolate;
+}
+.danger{
+  background-color: red;
+}
+
 .input{
   font-size: 0.9em;
   border-radius: 0.7em;

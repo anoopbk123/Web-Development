@@ -22,6 +22,9 @@ export default function Header() {
             <li>
               <Link to='/counter'>use effect example counter</Link>
             </li>
+            <li>
+              <Link to='/todo'>ToDo</Link>
+            </li>
           </ul>
         </nav>
       </header>
