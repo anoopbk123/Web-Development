@@ -16,6 +16,12 @@ export default function Header() {
             <li>
               <Link to='/sign-up'>Sign Up</Link>
             </li>
+            <li>
+              <Link to='/example-context'>Example Context</Link>
+            </li>
+            <li>
+              <Link to='/counter'>use effect example counter</Link>
+            </li>
           </ul>
         </nav>
       </header>
