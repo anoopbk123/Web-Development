@@ -12,7 +12,7 @@ export default function Header() {
           </Link>
         </h1>
         <nav className='nav'>
-          <ul className='d-flex gap-1'>
+          <ul className='d-flex gap-1 flex-wrap justify-evenly'>
             <li>
               <Link to='/sign-up'>Sign Up</Link>
             </li>
@@ -24,6 +24,12 @@ export default function Header() {
             </li>
             <li>
               <Link to='/todo'>ToDo</Link>
+            </li>
+            <li>
+              <Link to='/counter-reducer'>Counter with reducer</Link>
+            </li>
+            <li>
+              <Link to='/api-fetch'>Api fetch</Link>
             </li>
           </ul>
         </nav>
