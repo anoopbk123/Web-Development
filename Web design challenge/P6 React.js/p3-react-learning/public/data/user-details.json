@@ -1,184 +1,251 @@
 {
-    "users": [
+  "users": [
       {
-        "id": 1,
-        "username": "john_doe",
-        "email": "john.doe@example.com",
-        "first_name": "John",
-        "last_name": "Doe",
-        "age": 30,
-        "gender": "male",
-        "address": {
-          "street": "123 Main Street",
-          "city": "Anytown",
-          "state": "California",
-          "country": "USA",
-          "zipcode": "12345"
-        },
-        "phone": "+1 (123) 456-7890",
-        "registration_date": "2024-03-06"
+          "id": 1,
+          "username": "john_doe",
+          "email": "john.doe@example.com",
+          "first_name": "John",
+          "last_name": "Doe",
+          "age": 30,
+          "gender": "male",
+          "address": {
+              "street": "123 Main Street",
+              "city": "Anytown",
+              "state": "California",
+              "country": "Canada",
+              "zipcode": "12345"
+          },
+          "phone": "+1 (123) 456-7890",
+          "registration_date": "2024-03-06",
+          "country": "Canada"
       },
       {
-        "id": 2,
-        "username": "jane_smith",
-        "email": "jane.smith@example.com",
-        "first_name": "Jane",
-        "last_name": "Smith",
-        "age": 25,
-        "gender": "female",
-        "address": {
-          "street": "456 Elm Street",
-          "city": "Smalltown",
-          "state": "New York",
-          "country": "USA",
-          "zipcode": "54321"
-        },
-        "phone": "+1 (987) 654-3210",
-        "registration_date": "2024-03-05"
+          "id": 2,
+          "username": "jane_smith",
+          "email": "jane.smith@example.com",
+          "first_name": "Jane",
+          "last_name": "Smith",
+          "age": 25,
+          "gender": "female",
+          "address": {
+              "street": "456 Elm Street",
+              "city": "Smalltown",
+              "state": "New York",
+              "country": "Australia",
+              "zipcode": "54321"
+          },
+          "phone": "+1 (987) 654-3210",
+          "registration_date": "2024-03-05",
+          "country": "Australia"
       },
       {
-        "id": 3,
-        "username": "sam_jackson",
-        "email": "sam.jackson@example.com",
-        "first_name": "Sam",
-        "last_name": "Jackson",
-        "age": 35,
-        "gender": "male",
-        "address": {
-          "street": "789 Oak Avenue",
-          "city": "Metroville",
-          "state": "Texas",
-          "country": "USA",
-          "zipcode": "67890"
-        },
-        "phone": "+1 (456) 789-0123",
-        "registration_date": "2024-03-04"
+          "id": 3,
+          "username": "sam_jackson",
+          "email": "sam.jackson@example.com",
+          "first_name": "Sam",
+          "last_name": "Jackson",
+          "age": 35,
+          "gender": "male",
+          "address": {
+              "street": "789 Oak Avenue",
+              "city": "Metroville",
+              "state": "Texas",
+              "country": "France",
+              "zipcode": "67890"
+          },
+          "phone": "+1 (456) 789-0123",
+          "registration_date": "2024-03-04",
+          "country": "France"
       },
       {
-        "id": 4,
-        "username": "emily_white",
-        "email": "emily.white@example.com",
-        "first_name": "Emily",
-        "last_name": "White",
-        "age": 28,
-        "gender": "female",
-        "address": {
-          "street": "321 Cedar Lane",
-          "city": "Greenville",
-          "state": "North Carolina",
-          "country": "USA",
-          "zipcode": "54321"
-        },
-        "phone": "+1 (789) 012-3456",
-        "registration_date": "2024-03-03"
+          "id": 4,
+          "username": "emily_white",
+          "email": "emily.white@example.com",
+          "first_name": "Emily",
+          "last_name": "White",
+          "age": 28,
+          "gender": "female",
+          "address": {
+              "street": "321 Cedar Lane",
+              "city": "Greenville",
+              "state": "North Carolina",
+              "country": "France",
+              "zipcode": "54321"
+          },
+          "phone": "+1 (789) 012-3456",
+          "registration_date": "2024-03-03",
+          "country": "France"
       },
       {
-        "id": 5,
-        "username": "michael_brown",
-        "email": "michael.brown@example.com",
-        "first_name": "Michael",
-        "last_name": "Brown",
-        "age": 32,
-        "gender": "male",
-        "address": {
-          "street": "567 Pine Street",
-          "city": "Springfield",
-          "state": "Illinois",
-          "country": "USA",
-          "zipcode": "67890"
-        },
-        "phone": "+1 (012) 345-6789",
-        "registration_date": "2024-03-02"
+          "id": 5,
+          "username": "michael_brown",
+          "email": "michael.brown@example.com",
+          "first_name": "Michael",
+          "last_name": "Brown",
+          "age": 32,
+          "gender": "male",
+          "address": {
+              "street": "567 Pine Street",
+              "city": "Springfield",
+              "state": "Illinois",
+              "country": "France",
+              "zipcode": "67890"
+          },
+          "phone": "+1 (012) 345-6789",
+          "registration_date": "2024-03-02",
+          "country": "France"
       },
       {
-        "id": 6,
-        "username": "sarah_miller",
-        "email": "sarah.miller@example.com",
-        "first_name": "Sarah",
-        "last_name": "Miller",
-        "age": 27,
-        "gender": "female",
-        "address": {
-          "street": "234 Maple Avenue",
-          "city": "Oakland",
-          "state": "California",
-          "country": "USA",
-          "zipcode": "12345"
-        },
-        "phone": "+1 (234) 567-8901",
-        "registration_date": "2024-03-01"
+          "id": 6,
+          "username": "sarah_miller",
+          "email": "sarah.miller@example.com",
+          "first_name": "Sarah",
+          "last_name": "Miller",
+          "age": 27,
+          "gender": "female",
+          "address": {
+              "street": "234 Maple Avenue",
+              "city": "Oakland",
+              "state": "California",
+              "country": "Canada",
+              "zipcode": "12345"
+          },
+          "phone": "+1 (234) 567-8901",
+          "registration_date": "2024-03-01",
+          "country": "Canada"
       },
       {
-        "id": 7,
-        "username": "david_jones",
-        "email": "david.jones@example.com",
-        "first_name": "David",
-        "last_name": "Jones",
-        "age": 29,
-        "gender": "male",
-        "address": {
-          "street": "890 Elm Street",
-          "city": "Hillsboro",
-          "state": "Oregon",
-          "country": "USA",
-          "zipcode": "54321"
-        },
-        "phone": "+1 (345) 678-9012",
-        "registration_date": "2024-02-29"
+          "id": 7,
+          "username": "david_jones",
+          "email": "david.jones@example.com",
+          "first_name": "David",
+          "last_name": "Jones",
+          "age": 29,
+          "gender": "male",
+          "address": {
+              "street": "890 Elm Street",
+              "city": "Hillsboro",
+              "state": "Oregon",
+              "country": "Canada",
+              "zipcode": "54321"
+          },
+          "phone": "+1 (345) 678-9012",
+          "registration_date": "2024-02-29",
+          "country": "Canada"
       },
       {
-        "id": 8,
-        "username": "amanda_roberts",
-        "email": "amanda.roberts@example.com",
-        "first_name": "Amanda",
-        "last_name": "Roberts",
-        "age": 31,
-        "gender": "female",
-        "address": {
-          "street": "456 Oak Lane",
-          "city": "Columbus",
-          "state": "Ohio",
-          "country": "USA",
-          "zipcode": "67890"
-        },
-        "phone": "+1 (456) 789-0123",
-        "registration_date": "2024-02-28"
+          "id": 8,
+          "username": "amanda_roberts",
+          "email": "amanda.roberts@example.com",
+          "first_name": "Amanda",
+          "last_name": "Roberts",
+          "age": 31,
+          "gender": "female",
+          "address": {
+              "street": "456 Oak Lane",
+              "city": "Columbus",
+              "state": "Ohio",
+              "country": "Canada",
+              "zipcode": "67890"
+          },
+          "phone": "+1 (456) 789-0123",
+          "registration_date": "2024-02-28",
+          "country": "Canada"
       },
       {
-        "id": 9,
-        "username": "kevin_wilson",
-        "email": "kevin.wilson@example.com",
-        "first_name": "Kevin",
-        "last_name": "Wilson",
-        "age": 33,
-        "gender": "male",
-        "address": {
-          "street": "678 Cedar Street",
-          "city": "Portland",
-          "state": "Maine",
-          "country": "USA",
-          "zipcode": "12345"
-        },
-        "phone": "+1 (789) 012-3456",
-        "registration_date": "2024-02-27"
+          "id": 9,
+          "username": "kevin_wilson",
+          "email": "kevin.wilson@example.com",
+          "first_name": "Kevin",
+          "last_name": "Wilson",
+          "age": 33,
+          "gender": "male",
+          "address": {
+              "street": "678 Cedar Street",
+              "city": "Portland",
+              "state": "Maine",
+              "country": "Canada",
+              "zipcode": "12345"
+          },
+          "phone": "+1 (789) 012-3456",
+          "registration_date": "2024-02-27",
+          "country": "Canada"
       },
       {
-        "id": 10,
-        "username": "jennifer_taylor",
-        "email": "jennifer.taylor@example.com",
-        "first_name": "Jennifer",
-        "last_name": "Taylor",
-        "age": 26,
-        "gender": "female",
-        "address": {
-          "street": "789 Maple Lane",
-          "city": "Boulder",
-          "state": "Colorado",
-          "country": "USA",
-          "zipcode": "54321"
-        },
-        "phone": "+1 (012) 345-6789",
-        "registration_date": "2024-02-26"
+          "id": 10,
+          "username": "jennifer_taylor",
+          "email": "jennifer.taylor@example.com",
+          "first_name": "Jennifer",
+          "last_name": "Taylor",
+          "age": 26,
+          "gender": "female",
+          "address": {
+              "street": "789 Maple Lane",
+              "city": "Boulder",
+              "state": "Colorado",
+              "country": "Canada",
+              "zipcode": "54321"
+          },
+          "phone": "+1 (012) 345-6789",
+          "registration_date": "2024-02-26",
+          "country": "Canada"
+      },
+      {
+          "id": 11,
+          "username": "liu_yang",
+          "email": "liu.yang@example.com",
+          "first_name": "Liu",
+          "last_name": "Yang",
+          "age": 28,
+          "gender": "male",
+          "address": {
+              "street": "123 Bamboo Lane",
+              "city": "Beijing",
+              "state": "Beijing",
+              "country": "China",
+              "zipcode": "100000"
+          },
+          "phone": "+86 123456789",
+          "registration_date": "2024-03-07",
+          "country": "China"
+      },
+      {
+          "id": 12,
+          "username": "sophia_garcia",
+          "email": "sophia.garcia@example.com",
+          "first_name": "Sophia",
+          "last_name": "Garcia",
+          "age": 29,
+          "gender": "female",
+          "address": {
+              "street": "456 Rose Avenue",
+              "city": "Madrid",
+              "state": "Madrid",
+              "country": "Spain",
+              "zipcode": "28001"
+          },
+          "phone": "+34 912345678",
+          "registration_date": "2024-03-08",
+          "country": "Spain"
+      },
+      {
+          "id": 13,
+          "username": "yuki_tanaka",
+          "email": "yuki.tanaka@example.com",
+          "first_name": "Yuki",
+          "last_name": "Tanaka",
+          "age": 31,
+          "gender": "male",
+          "address": {
+              "street": "789 Sakura Street",
+              "city": "Tokyo",
+              "state": "Tokyo",
+              "country": "Japan",
+              "zipcode": "100-0001"
+          },
+          "phone": "+81 123456789",
+          "registration_date": "2024-03-09",
+          "country": "Japan"
       }
-    ]
+  ]
 }
