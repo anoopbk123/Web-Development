@@ -1,35 +1,38 @@
 import React from 'react'
 import './Header.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
     <>
       <header className='header d-flex gap-1 p-1'>
         <h1 className='logo-title'>
-          <Link to='/'>
+          <NavLink to='/'>
           learn react
-          </Link>
+          </NavLink>
         </h1>
         <nav className='nav'>
           <ul className='d-flex gap-1 flex-wrap justify-evenly'>
             <li>
-              <Link to='/sign-up'>Sign Up</Link>
+              <NavLink to='/sign-up'>Sign Up</NavLink>
             </li>
             <li>
-              <Link to='/example-context'>Example Context</Link>
+              <NavLink to='/example-context'>Example Context</NavLink>
             </li>
             <li>
-              <Link to='/counter'>use effect example counter</Link>
+              <NavLink to='/counter'>use effect example counter</NavLink>
             </li>
             <li>
-              <Link to='/todo'>ToDo</Link>
+              <NavLink to='/todo'>ToDo</NavLink>
             </li>
             <li>
-              <Link to='/counter-reducer'>Counter with reducer</Link>
+              <NavLink to='/counter-reducer'>Counter with reducer</NavLink>
             </li>
             <li>
-              <Link to='/api-fetch'>Api fetch</Link>
+              <NavLink to='/api-fetch'>Api fetch</NavLink>
+            </li>
+            <li>
+              <NavLink to='/users'>Users</NavLink>
             </li>
           </ul>
         </nav>

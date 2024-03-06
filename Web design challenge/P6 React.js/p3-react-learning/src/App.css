@@ -46,6 +46,9 @@
 .justify-evenly{
   justify-content: space-evenly;
 }
+.justify-center{
+  justify-content: center;
+}
 .flex-grow-1{
   flex-grow: 1;
 }
@@ -90,4 +93,14 @@
 }
 .input:focus{
   outline: 1px solid rgb(225, 2, 2);
+}
+.card-text{
+  background-color: #C9C9C9;
+  color: #2C1145;
+  border-radius: 20px;
+  padding: 0.5em;
+}
+/* list styles */
+.list-style-none{
+  list-style:none;
 }

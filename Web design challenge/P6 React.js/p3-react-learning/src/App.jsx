@@ -8,6 +8,8 @@ import Counter from './components/use-effect-counter/Counter'
 import ToDo from './pages/ToDo'
 import CounterUsingReducer from './components/counter-using-reducer/CounterUsingReducer'
 import APIFetch from './components/APIFetch'
+import Users from './pages/users/Users'
+import UserDetails from './pages/user-details/UserDetails'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +25,8 @@ function App() {
         <Route path='/todo' element={<ToDo/>} />
         <Route path='/counter-reducer' element={<CounterUsingReducer/>}/>
         <Route path='/api-fetch' element={<APIFetch/>}/>
+        <Route path='/users' element={<Users/>}/>
+        <Route path='/user-details/:userId/:userEmail' element={<UserDetails/>}/>
 
       </Routes>
       </BrowserRouter>
