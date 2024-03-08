@@ -64,6 +64,9 @@
 .max-100{
   max-width: 100%;
 }
+.over-flow-wrap{
+  overflow-wrap: break-word;
+}
 
 /* Reusable element classes */
 
@@ -104,3 +107,4 @@
 .list-style-none{
   list-style:none;
 }
+

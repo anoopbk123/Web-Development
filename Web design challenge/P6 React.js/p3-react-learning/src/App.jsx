@@ -1,22 +1,29 @@
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import SignUpPage from './pages/SignUpPage'
 import ExampleContext from './components/example-context/ExampleContext'
 import Counter from './components/use-effect-counter/Counter'
-import ToDo from './pages/ToDo'
 import CounterUsingReducer from './components/counter-using-reducer/CounterUsingReducer'
 import APIFetch from './components/APIFetch'
 import Users from './pages/users/Users'
 import UserDetails from './pages/user-details/UserDetails'
+import Address from './pages/user-details/Address'
+import Phone from './pages/user-details/Phone'
+import Registration from './pages/user-details/Registration'
+import React from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
+  const ToDo = React.lazy(()=>{
+    return import(/*webpackChunkName: ToDo*/'./pages/ToDo')
+  })
 
   return (
     <>
       <BrowserRouter>
+      <Suspense fallback={<div>Loading....</div>}>
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route path='/sign-up' element={<SignUpPage/>}/>
@@ -26,9 +33,14 @@ function App() {
         <Route path='/counter-reducer' element={<CounterUsingReducer/>}/>
         <Route path='/api-fetch' element={<APIFetch/>}/>
         <Route path='/users' element={<Users/>}/>
-        <Route path='/user-details/:userId/:userEmail' element={<UserDetails/>}/>
+        <Route path='/user-details/:userId/:userEmail' element={<UserDetails/>}>
+          <Route path='' index  element={<Address/>}/>
+          <Route path='phone' element={<Phone/>}/>
+          <Route path='registration-date' element={<Registration/>}/>
+        </Route>
         <Route path='*' element={<Navigate to='/' />}/>
       </Routes>
+      </Suspense>
       </BrowserRouter>
     </>
   )
