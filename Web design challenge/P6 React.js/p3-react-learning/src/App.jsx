@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import SignUpPage from './pages/SignUpPage'
 import ExampleContext from './components/example-context/ExampleContext'
@@ -27,7 +27,7 @@ function App() {
         <Route path='/api-fetch' element={<APIFetch/>}/>
         <Route path='/users' element={<Users/>}/>
         <Route path='/user-details/:userId/:userEmail' element={<UserDetails/>}/>
-
+        <Route path='*' element={<Navigate to='/' />}/>
       </Routes>
       </BrowserRouter>
     </>

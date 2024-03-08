@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 
 export default function UserDetails() {
   const [userData, setUserData] = useState()
   const {userId, userEmail} = useParams()
+  const navigator = useNavigate()
+  const {state,pathname} = useLocation()
+  console.log('state',state,'pathname',pathname)
 
   const fetchUserData = async()=>{
+    console.log('fetchUserData run')
     try{
       const res = await fetch('../../data/user-details.json')
       const data = await res.json()
@@ -19,7 +23,12 @@ export default function UserDetails() {
   }
 
   useEffect(()=>{
-    fetchUserData()
+    if(state){
+      setUserData(state)
+    }
+    else{
+      fetchUserData()
+    }
   },[])
 
   if(userData){
@@ -51,6 +60,7 @@ export default function UserDetails() {
       </ul>
       </div>
       </>}
+      <div className="text-center"><button onClick={()=>navigator(-1)} className="btn-primary warning m-1">Go back</button></div>
     </div>
   )
 }
