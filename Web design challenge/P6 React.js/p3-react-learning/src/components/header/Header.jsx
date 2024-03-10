@@ -34,6 +34,9 @@ export default function Header() {
             <li>
               <NavLink to='/users'>Users</NavLink>
             </li>
+            <li>
+              <NavLink to='/redux-counter'>Counter using redux</NavLink>
+            </li>
           </ul>
         </nav>
       </header>

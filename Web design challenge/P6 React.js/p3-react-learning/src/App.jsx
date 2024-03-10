@@ -13,6 +13,7 @@ import Address from './pages/user-details/Address'
 import Phone from './pages/user-details/Phone'
 import Registration from './pages/user-details/Registration'
 import React from 'react'
+import ReduxCounter from './components/counter-using-redux/ReduxCounter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <>
       <Suspense fallback={<div>Loading....</div>}>
       <Routes>
         <Route path='/' element={<HomePage/>} />
@@ -38,10 +39,11 @@ function App() {
           <Route path='phone' element={<Phone/>}/>
           <Route path='registration-date' element={<Registration/>}/>
         </Route>
+      <Route path='/redux-counter' element={<ReduxCounter/>}/>
         <Route path='*' element={<Navigate to='/' />}/>
       </Routes>
       </Suspense>
-      </BrowserRouter>
+      </>
     </>
   )
 }
