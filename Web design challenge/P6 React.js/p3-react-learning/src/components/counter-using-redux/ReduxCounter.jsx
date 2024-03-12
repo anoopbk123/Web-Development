@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { colorAction, counterAction } from '../../redux/store'
+import { changeColor } from '../../redux-toolkit/colorSlice'
+import { changeCounter } from '../../redux-toolkit/counterSlice'
 
 export default function ReduxCounter() {
   const count = useSelector((store)=>store.count)
@@ -12,24 +13,24 @@ export default function ReduxCounter() {
       <div className="text-center d-flex justify-center gap-1">
       <div>
             <button onClick={()=>{
-              dispatch(colorAction('green'))
+              dispatch(changeColor('green'))
             }}  className="btn-primary">Green</button>
         </div>
         <div>
             <button onClick={()=>{
-              dispatch(counterAction('increment'))
+              dispatch(changeCounter(1))
             }}  className="btn-primary">+</button>
         </div>
         <div style={{color:color}}>
             count {count}
         </div>
         <div>
-            <button onClick={()=>{dispatch(counterAction('decrement'))
+            <button onClick={()=>{dispatch(changeCounter(-1))
             }} className="btn-primary">-</button>
         </div>
         <div>
             <button onClick={()=>{
-              dispatch(colorAction('yellow'))
+              dispatch(changeColor('yellow'))
             }}  className="btn-primary">Yellow</button>
         </div>
       </div>

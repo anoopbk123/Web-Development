@@ -14,6 +14,7 @@ import Phone from './pages/user-details/Phone'
 import Registration from './pages/user-details/Registration'
 import React from 'react'
 import ReduxCounter from './components/counter-using-redux/ReduxCounter'
+import ToDoUsingRedux from './components/ToDoUsingRedux'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,6 +41,7 @@ function App() {
           <Route path='registration-date' element={<Registration/>}/>
         </Route>
       <Route path='/redux-counter' element={<ReduxCounter/>}/>
+      <Route path='/redux-todo' element={<ToDoUsingRedux/>}/>
         <Route path='*' element={<Navigate to='/' />}/>
       </Routes>
       </Suspense>
