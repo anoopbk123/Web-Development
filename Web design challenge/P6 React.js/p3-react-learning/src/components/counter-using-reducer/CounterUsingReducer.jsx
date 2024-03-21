@@ -16,26 +16,26 @@ export default function CounterUsingReducer() {
         }
     },[counterState])
 
-    const fetchAPI = ()=>{
-      fetch('http://localhost:4000/name/2')
-      .then((res)=>{
-        console.log(res)
-        if(!res.ok){
-          throw new Error('error while fetching data')
-        }
-        return res.json()
-      })
-      .then((data)=>{
-        setData(data)
-      })
-      .catch((err)=>{
-        setData(err.message)
-      })
-    }
+    // const fetchAPI = ()=>{
+    //   fetch('http://localhost:4000/name/2')
+    //   .then((res)=>{
+    //     console.log(res)
+    //     if(!res.ok){
+    //       throw new Error('error while fetching data')
+    //     }
+    //     return res.json()
+    //   })
+    //   .then((data)=>{
+    //     setData(data)
+    //   })
+    //   .catch((err)=>{
+    //     setData(err.message)
+    //   })
+    // }
 
-    useEffect(()=>{
-      fetchAPI()
-    },[])
+    // useEffect(()=>{
+    //   fetchAPI()
+    // },[])
 
 
   return (

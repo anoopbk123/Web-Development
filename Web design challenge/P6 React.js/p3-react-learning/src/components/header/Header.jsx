@@ -40,6 +40,9 @@ export default function Header() {
             <li>
               <NavLink to='/redux-todo'>To Do App using Redux</NavLink>
             </li>
+            <li>
+              <NavLink to='/otp'>OTP</NavLink>
+            </li>
           </ul>
         </nav>
       </header>

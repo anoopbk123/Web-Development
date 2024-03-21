@@ -15,6 +15,7 @@ import Registration from './pages/user-details/Registration'
 import React from 'react'
 import ReduxCounter from './components/counter-using-redux/ReduxCounter'
 import ToDoUsingRedux from './components/ToDoUsingRedux'
+import Otp from './pages/Otp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ function App() {
         <Route path='/counter-reducer' element={<CounterUsingReducer/>}/>
         <Route path='/api-fetch' element={<APIFetch/>}/>
         <Route path='/users' element={<Users/>}/>
+        <Route path='/otp' element={<Otp/>}/>
         <Route path='/user-details/:userId/:userEmail' element={<UserDetails/>}>
           <Route path='' index  element={<Address/>}/>
           <Route path='phone' element={<Phone/>}/>

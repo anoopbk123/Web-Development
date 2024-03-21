@@ -1,0 +1,91 @@
+  single thread
+event driven architecture
+non blocking
+types of modules:-
+1) core modules:- dfault by node js like http
+2) custom
+3) 3rd party like useformic, toastify
+npm init - command to init backend
+nodeman - to automatically update server, after installation update package.json and then npm start
+
+mongodb
+mongoDB is bison format
+db>collection>document>fields in json or bison format(binary format)
+database is a group of collections
+collection is a group of documents
+documents (one object) is a group of fields
+
+
+commands:-
+mongod
+mongosh:-to run
+show dbs:-to view databases
+use database_name :-use existing or  create new database
+show collections :- to view collections
+db.createCollectioin('collection name'):-create new collection
+db.collection_name.insertOne({json}):-create new collection with one document, to create morethan one document use insertMany([{json}, {json}])
+db.collection_name.find:-to view fields, fields are key value pairs
+mogodb create id deafault
+find have two arguments 1.query- to find a particular field, syntax:- db.collection_name.find({key:'value'})
+and 2. projection select only one field, syntax:- db.collection_name.find({key:'value'},{key:1,_id:0}):-only gives the name property and no id
+
+sampleMern> db.stack.find({active:true}).limit(1):- only one document will print
+sampleMern> db.stack.find({active:true}).limit(1)
+sampleMern> db.stack.find().skip(1).limit(1):-skip 1st document
+sampleMern> db.stack.findOne({active:true}):-to get one document
+
+update
+------
+db.collection_name.updateOne({filter},{updation})  :-use updateMany() to update all the fields
+eg:- db.collection_name.updateOne({name:'mongoDB'},{$set:{name:'Mysql'}}
+eg:- db.stack.updateOne({name:'Mysql'},{$set:{active:false}})
+to insert a new field use updateOne and select the document by field and set the new fields
+student_details> db.class_B.updateMany({},{$set:{class:'A'}}) :- to insert new fild to all documents
+student_details> db.class_B.updateOne({name:'joe'},{$set:{mark:20+40}})
+
+Delete document
+------
+deleteOne and deleteMany
+eg:- sampleMern> db.stack.deleteOne({name:'mongoDB'})
+
+Delete database
+--------------
+sample_database> db.dropDatabase()
+
+Delete collection
+-----------------
+db.items.drop()
+
+Delete field
+------------
+student_details> db.class_B.updateMany({},{$unset:{class:1}}) :- delete  class field from all documents
+
+operators
+---------
+sampleMern> db.stack.find({experiance:{$eq:2}}) - =
+sampleMern> db.stack.find({experiance:{$ne:2}}) - !=
+sampleMern> db.stack.find({experiance:{$gt:2}}) - >
+sampleMern> db.stack.find({experiance:{$lt:2}}) - <
+
+sort
+-----
+sampleMern> db.stack.find().sort({experiance:1}) - asc
+sampleMern> db.stack.find().sort({experiance:-1}) - dsc
+
+Aggregation
+---------
+its a frame work
+its written as a pipeline ones output is the input of the other
+array of instructions
+
+questions
+---------
+data types in mongoDB
+how to create databases in mongoDB
+how to create collection in mdb
+diff b/w find(), findOne() and insert(), insertMany()
+sharding - horizontal scaling, vertical scaling
+aggrigation in mongoDB
+object id importance
+how can you limit document return in a mongoDB query
+difference b/w update and updateOne
