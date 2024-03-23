@@ -51,3 +51,50 @@ module.exports.getAllPromotions = async(req, res)=>{
         })
     }
 }
+
+module.exports.editPromotions = async (req, res) => {
+    const{_id, price, description} = req.body
+    console.log('before edit',_id, price, description)
+    try{
+        const edited = await promotionModel.findByIdAndUpdate(_id, {price, description})
+        if(edited){
+            console.log('edited',edited)
+            return res.json({
+                message:'promotion edited',
+                status:true
+            })
+        }
+        res.json({
+            message:'failed to edit data',
+            status:false
+        })
+    }
+    catch(err){
+        console.log(err)
+        res.json({
+            message:err,
+            status:false
+        })
+    }
+
+}
+module.exports.deletePromotion = async (req, res) => {
+    const {id} = req.params
+    try{
+        const deleted = await promotionModel.findByIdAndDelete(id)
+    if(deleted){
+        console.log(deleted)
+        return res.json({
+            message:'deleted success fully',
+            status: true
+        })
+    }
+    }
+    catch(err){
+        console.log(err)
+        res.json({
+            message:'deletion unsuccessful',
+            status:false
+        })
+    }
+}
