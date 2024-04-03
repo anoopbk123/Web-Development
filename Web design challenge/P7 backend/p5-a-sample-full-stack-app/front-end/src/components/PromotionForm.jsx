@@ -8,22 +8,30 @@ export default function PromotionForm() {
     promotionName: "",
     promotionPrice: "",
     promotionDescription: "",
+    promotionImage:null
   });
   const [promotionData, setPromotionData] = useState([]);
   const [editData, setEditData] = useState(null)
   const handleChange = (e) => {
-    const {name, value} = e.target
+    // console.log(e.target)
+    const {name, value, type, files} = e.target
     setFormData((prev)=>{
         return{
             ...prev,
-            [name]:value
+            [name]:type === 'file' ? files[0] : value
         }
     })
   }
   const handleSubmit = async (e)=>{
     e.preventDefault()
+    console.log(formData.promotionImage)
+    if(formData.promotionImage === null){
+      return alert('please choose image')
+    }
     try{
-    const response = await axios.post('http://localhost:4000/promotion/create',formData)
+    const response = await axios.post('http://localhost:4000/promotion/create',formData,{
+      headers:{'content-type':'multipart/form-data'}
+    })
     const data = response.data
     if(data.status){
       alert(data.message)
@@ -31,6 +39,7 @@ export default function PromotionForm() {
         promotionName: "",
         promotionPrice: "",
         promotionDescription: "",
+        promotionImage:null
       })
       fetchPromotions()
     }
@@ -39,7 +48,7 @@ export default function PromotionForm() {
     }
     }
     catch(err){
-      alert(err)
+      alert(err.message)
     }
   }
 
@@ -105,7 +114,7 @@ const handleEditSubmit = async (e)=>{
 
 // delete
 
-const handleDelete = async (id, name)=>{
+const handleDelete = async (id, name, image)=>{
   const confirmation = confirm("Are you sure to delete the promotion "+name)
   if(confirmation){
     try{
@@ -164,6 +173,16 @@ const handleDelete = async (id, name)=>{
         </label>
         </div>
         <div>
+        <label>
+          Promotion Picture{" "}
+          <input type="file"
+          value={promotionData.promotionImage}
+          onChange={handleChange}
+            name="promotionImage"
+          />
+        </label>
+        </div>
+        <div>
             <button>Submit</button>
         </div>
       </form>
@@ -174,6 +193,7 @@ const handleDelete = async (id, name)=>{
             <thead>
               <tr>
                 <th>Id</th>
+                <th>Image</th>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
@@ -186,11 +206,12 @@ const handleDelete = async (id, name)=>{
               promotionData.map(value=>(
                 <tr>
                   <td>{value._id}</td>
+                  <td><img width={'200'} src={`http://localhost:4000/${value.image}`} alt="" /></td>
                   <td>{value.name}</td>
                   <td>{value.price}</td>
                   <td>{value.description}</td>
                   <td><button style={{backgroundColor:'yellow'}} onClick={()=>{handleEdit(value)}}>Edit</button></td>
-                  <td><button style={{backgroundColor:'red'}} onClick={()=>{handleDelete(value._id, value.name)}}>Delete</button></td>
+                  <td><button style={{backgroundColor:'red'}} onClick={()=>{handleDelete(value._id, value.name, value.image)}}>Delete</button></td>
                 </tr>
               ))
             }

@@ -1,8 +1,10 @@
 const promotionModel = require("../models/promotion").promotionModel;
+const fs = require('fs')
 
 module.exports.createPromotion = async (req, res) => {
+    console.log(req.file)
     const { promotionName, promotionPrice, promotionDescription } = req.body;
-    console.log('body',req.body)
+    // console.log('body',req.body)
     try {
         const existingPromotion = await promotionModel.findOne({ name:promotionName });
         if (existingPromotion) {
@@ -11,8 +13,9 @@ module.exports.createPromotion = async (req, res) => {
                 status: false,
             });
         } else {
+            console.log(req.file)
             const newPromotion = new promotionModel({
-                name:promotionName, price:Number(promotionPrice), description:promotionDescription
+                name:promotionName, price:Number(promotionPrice), description:promotionDescription, image: req.file.path
             })
             await newPromotion.save()
             return res.json({
@@ -24,7 +27,7 @@ module.exports.createPromotion = async (req, res) => {
         // Handle errors appropriately
         console.error(err);
         res.status(500).json({
-            message: 'Internal server error',
+            message: err,
             status: false,
         });
     }
@@ -82,7 +85,17 @@ module.exports.deletePromotion = async (req, res) => {
     const {id} = req.params
     try{
         const deleted = await promotionModel.findByIdAndDelete(id)
+        console.log(deleted)
     if(deleted){
+        fs.unlink(deleted.image, (err)=>{
+            if(err){
+                console.log(err)
+                return res.json({
+                    message:'promotion deleted but cannot delete image',
+                    status: true
+                })
+            }
+        })
         console.log(deleted)
         return res.json({
             message:'deleted success fully',

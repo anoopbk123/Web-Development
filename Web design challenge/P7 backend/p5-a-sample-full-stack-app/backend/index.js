@@ -8,6 +8,8 @@ app.use(express.json())
 app.use(cors())
 dbConnection.dbConnect()
 
+app.use('/uploads', express.static(__dirname + '/uploads'))
+
 app.get('/', (req, res)=>{
     res.end('hello');
 })

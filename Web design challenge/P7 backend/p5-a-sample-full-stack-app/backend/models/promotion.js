@@ -12,6 +12,10 @@ const promotionSchema = new mongoose.Schema({
         required:true,
         type:String,
     },
+    image:{
+        type:String,
+        required: true
+    }
 },
 {
     timestamps:true,
