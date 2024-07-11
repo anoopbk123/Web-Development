@@ -10,4 +10,4 @@ const starPyramid = (n)=>{
         console.log(row)
     }
 }
-starPyramid(5)
+starPyramid(15)
