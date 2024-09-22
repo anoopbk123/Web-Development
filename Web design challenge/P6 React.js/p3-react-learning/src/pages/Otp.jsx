@@ -5,7 +5,7 @@ export default function Otp() {
     const [out, setOut] = useState()
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch(`http://localhost:4000/${email}`)
+        fetch(`http://localhost:6000/${email}`)
         .then((res)=>res.json())
         .then((d)=>{console.log(d)})
     }

@@ -43,6 +43,9 @@ export default function Header() {
             <li>
               <NavLink to='/otp'>OTP</NavLink>
             </li>
+            <li>
+              <NavLink to='/test'>Test</NavLink>
+            </li>
           </ul>
         </nav>
       </header>

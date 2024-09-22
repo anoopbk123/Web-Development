@@ -1,0 +1,32 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Re usable classes */
+.m1{
+  margin: 1rem;
+}
+.m3{
+  margin: 3rem;
+}
+.d-flex{
+  display: flex;
+}
+.text-center{
+  text-align: center;
+}
+nav{
+  background-color: darkgoldenrod;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li{
+  margin: 1rem;
+}
+nav a{
+  text-decoration: none;
+  color: inherit;
+}

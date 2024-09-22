@@ -19,8 +19,8 @@ async function sendOTP(email, otp) {
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.EMAIL, 
-            pass: process.env.PASSWORD
+            user: 'bbla20838@gmail.com', 
+            pass: '#Aa12345'
         }
     });
 
@@ -41,6 +41,7 @@ async function sendOTP(email, otp) {
 
 // Route to generate OTP and send it via email
 app.get("/:email", (req, res) => {
+    console.log(req.params.email)
     const email = req.params.email;
     const otp = generateOTP();
     
@@ -53,7 +54,10 @@ app.get("/:email", (req, res) => {
             res.status(500).json({ error: "Failed to send OTP" });
         });
 });
+app.get('/', (req, res)=>{
+    res.json('hello')
+})
 
-app.listen(4000, () => {
+app.listen(7000, () => {
     console.log("Server running");
 });
