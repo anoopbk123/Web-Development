@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2</title>
+    <style>
+        table,tr,td,th{
+            border-collapse: collapse;
+            border: 1px dashed green;
+        }
+       /* table{
+            border-spacing: 20px;
+        }
+            */
+        td:nth-child(1){
+            background-color: chartreuse;
+        }
+        ul{
+            list-style-type:circle;
+        }
+        .navigation li{
+            float: left;
+            list-style-type: none;
+            margin-left: 5px;
+        }
+        .inline-block{
+            display: inline-block;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <table className=".table">
+        <caption>Table 1.O</caption>
+        <colgroup>
+        <col span="1">
+        <col span="2" style="background-color: darkgrey;">
+        </colgroup>
+        <thead>
+           <tr style="height: 50px;">
+            <th style="width:200px">name</th>
+            <th>Age</th>
+            <th>place</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>abc</td>
+                <td>123</td>
+                <td>plc</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>123</td>
+                <td>plc</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>123</td>
+                <td>plc</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>123</td>
+                <td>plc</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="3">From wiki</th>
+        </tfoot>
+    </table>
+
+    <ul>
+        <b>List</b>
+        <li>
+            Animals
+            <ol type="a">
+                <li>
+                    Elephant
+                </li>
+                <li>Donkey</li>
+                <li>Monkey</li>
+            </ol>
+        </li>
+        <li>
+            Fruits
+            <ol type="i" start="3">
+                <li>
+                    Apple
+                </li>
+                <li>
+                    Grape
+                </li>
+            </ol>
+        </li>
+        <li>
+            <dl>
+                <dt>Order List</dt>
+                <dd>-There is an order for start and end</dd>
+                <dt>Unordered List</dt>
+                <dd>-No order</dd>
+            </dl>
+        </li>
+    </ul>
+
+    <ul class="navigation">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+<br><br>
+    <div class="inline-block">inline-block Lorem ipsum, dolor sit amet con</div>
+    <div class="inline-block">inline-block</div>
+    <div class="inline-block">inline-block</div>
+</body>
+</html>
