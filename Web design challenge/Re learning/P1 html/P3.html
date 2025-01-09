@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video, iframe, form</title>
+</head>
+<body>
+    <h1>P3</h1>
+    <h2>iFrame</h2>
+    <iframe style="border: 1px solid rgb(191, 172, 212);" name="iframe" width="400" height="300" src="P3.html"></iframe>
+    <a href="P1.html" target="iframe">click here to change iframe</a><br>
+    <figure>
+        <img src="../1.png" alt="dd">
+        <figcaption>
+           <i>Brave</i>
+        </figcaption>
+    </figure>
+    <h2>Form</h2>
+    <form action="" target="_self" name="details-form" method="get">
+        <fieldset style="background-image: url(../1.png);background-repeat:no-repeat; background-attachment:scroll">
+            <legend>
+                Details Form
+            </legend>
+            <input type="text" name="s_name" placeholder="enter name" size="10" maxlength="6" required autofocus>
+            <input type="number" name="s_age" step="2" max="18" min="10" placeholder="age"><br>
+            Course: <input type="radio" name="s_course" id="+2"> <label for="+2">+2</label>
+            <input type="radio" name="s_course" id="HSE"><label for="HSE">HSE</label>
+            <br>
+            Transportation: <Select>
+                <option value="Private">Private</option>
+                <option value="Public">Public</option>
+                <option value="Walk" selected>Walk</option>
+            </Select>
+            <input type="text" value="fill all" readonly disabled>
+        </fieldset>
+    </form>
+    <video autoplay controls>
+        <source src="video.mp4">
+    </video>
+    <embed width="100%" height="500px" src="1.pdf" type="application/pdf">
+</body>
+</html>
