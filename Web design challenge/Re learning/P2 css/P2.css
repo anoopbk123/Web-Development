@@ -1,0 +1,22 @@
+body{
+    height:500vh;
+}
+.relative{
+    position: relative;
+}
+.top{
+    top:30px;
+}
+.bottom{
+    bottom: 25px;
+    height: 200px;
+}
+.absolute{
+    width:fit-content;
+    position:absolute;
+    bottom: 0;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}

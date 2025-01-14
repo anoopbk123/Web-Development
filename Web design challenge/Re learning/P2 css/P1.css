@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0%;
+}
+body{
+    width: 100vw;
+}
+.m-auto{
+    margin: auto;
+}
+.bg-primary{
+    background-color: antiquewhite;
+}
+.bg-secondary{
+    background-color: darkseagreen;
+}
+.container{
+    width: 80%;
+    margin: 2em;
+    padding: 1em;
+    text-indent: 50px;
+}
+/* .break-word{
+    overflow-wrap: break-word;
+} */
+.text-justify{
+    text-align: justify;
+}
+.text-center{
+    text-align: center;
+}
+.text-underline{
+    text-decoration: underline 5px dotted red;
+}
+.text-shadow{
+    text-shadow: 2px 2px 2px green;
+}

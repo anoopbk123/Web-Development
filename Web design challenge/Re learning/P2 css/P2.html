@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="P2.css">
+    <link rel="stylesheet" href="P1.css">
+    <title>CSS Position</title>
+</head>
+<body>
+    <h1 class="text-center">Position</h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat animi sapiente? Aut fugit ducimus deserunt in deleniti et excepturi expedita esse dicta? Voluptatem nostrum repudiandae iste corporis provident fugit.
+    <div class="bg-primary relative top">
+        Relative top
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore exercitationem, voluptatem deleniti dolor dignissimos excepturi ad dolore, nobis vero molestiae est commodi impedit. Voluptatem ullam praesentium ducimus delectus unde recusandae.
+    <div class="bg-primary relative bottom">
+        Relative bottom
+        <div class="bg-secondary absolute">
+            Absolute in relative(ancestor) bottom 0
+        </div>
+    </div>
+    <div class="bg-secondary absolute">
+        Absolute out bottom 0. Consider document
+    </div>
+    <div class="bg-secondary absolute">
+        Absolute out bottom 0. Consider document
+    </div>
+    <div class="bg-secondary absolute" style="top:0; height:fit-content"> Absolute out top 0. Consider documen
+        <div class="bg-secondary" style="position: fixed; top:0;right:0;">fixed top 0 right 0</div>
+    </div>
+    <div class="sticky bg-secondary">
+        Sticky top 0
+    </div>
+    <div style="width: 100px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo ducimus inventore? Animi dicta quae eos et tenetur! Culpa incidunt voluptas delectus modi iusto iste. Ipsa dolorum tenetur fugit voluptatibus.</div>
+    <div class="bg-secondary" style="position:sticky;bottom:0;">
+        sticky bottom 0
+    </div>
+</body>
+</html>
