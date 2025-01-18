@@ -1,0 +1,43 @@
+:root{
+    --bg-primary: blanchedalmond;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg-primary{
+    background-color: var(--bg-primary)
+}
+.m-1{
+    margin: 1em;
+}
+.p1{
+    padding: 1em;
+}
+.float{
+    float: left;
+    width: 10em;
+}
+.border-elliptical{
+    border: 2px solid;
+    border-radius: 15px/50px;
+}
+.bg-secondary{
+    background-image: linear-gradient(to right, red, green, blue, orange, violet, pink, black, tomato,skyblue);
+}
+.rainbow{
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    transition: transform 2s ease 0.5s;
+}
+.rainbow:hover{
+    transform: scale(1.5, 1.5) rotate(180deg) rotateX(180deg) rotateY(180deg) skew(10deg);
+  
+}
+@media screen and (min-width:600px){
+    :root{
+        --bg-primary:rgb(209, 135, 24);
+    }
+}
